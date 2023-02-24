@@ -1,0 +1,538 @@
+﻿<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+<!-- Do this first - we want things loading ASAP. -->
+<link href='https://fonts.googleapis.com' rel='preconnect'>
+<link crossorigin='true' href='https://fonts.gstatic.com' rel='preconnect'>
+<link crossorigin='true' href='https://d24y9kuxp2d7l2.cloudfront.net' rel='preconnect'>
+<!-- We always want this rendered at the start. -->
+<link rel="stylesheet" href="../assets/website-986ddebd9a7dab58d92347bbf4cd918dffac7b6f.css" data-turbo-track="reload">
+<link rel="stylesheet" href="../css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&amp;display=swap">
+<script data-api='/usage/api/event' data-domain='exercism.org' defer="" src='../usage/js/script.js'></script>
+<link rel="stylesheet" href="../assets/internal-09019deeb529b28f6285d0e865647c9765452bbd.css" data-turbo-track="reload">
+<link rel="stylesheet" href="../assets/application-69fb7b3abaf2e7663cc89f6a267aa2796b38294d.css" data-turbo-track="reload">
+<script src="../assets/core-3f789adc5de44e6b577efdbf473e275a77791fb6.js" crossorigin="anonymous" type="module" data-turbo-track="reload" data-turbo-eval="false"></script>
+<script src="../assets/application-72c1fd29327ab2a52cdaa3435b28a2ae66201373.js" crossorigin="anonymous" type="module" data-turbo-track="reload" data-turbo-eval="false"></script>
+
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="9N7Ti6DCVQdYYleNrfOATsmDaVkfCoOftOTaNFkrMrH3zgfjkWLsiGnCE14SNMWv5Uhl0UhfTtyEdBuLGulpog">
+
+<meta name="action-cable-url" content="wss://exercism.org/cable">
+<meta content='no-cache' name='turbo-cache-control'>
+<meta content='language-servers-925786784.eu-west-2.elb.amazonaws.com' name='language-server-url'>
+<meta content='https://exercism.org/api/v2/bug_reports' name='bug-reports-url'>
+<meta content='https://exercism.org/api/v2/markdown/parse' name='parse-markdown-url'>
+<meta content='' name='user-id'>
+<meta content='pk_live_51IDGMXEoOT0Jqx0UGsyx7fUW7iojTCPobNQDDoVdVY64qsyeNyFDqQRAgXSdj2HF8mYzPGxsBWIEFPnenq0lEhLH00x7KfG52T' name='stripe-publishable-key'>
+<title>Exercism's Team</title>
+<meta content='Learn who runs Exercism, out trustees, leadership and full-time time.' name='description'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1, viewport-fit=cover' name='viewport'>
+<!-- Twitter Card data -->
+<meta content='summary_large_image' name='twitter:card'>
+<meta content='@exercism_io' name='twitter:site'>
+<meta content='@exercism_io' name='twitter:creator'>
+<meta content='https://exercism.org/about/team' name='twitter:url'>
+<meta content='Exercism&#39;s Team' name='twitter:title'>
+<meta content='Learn who runs Exercism, out trustees, leadership and full-time time.' name='twitter:description'>
+<meta content='https://dg8krxphbh767.cloudfront.net/meta/og.png' name='twitter:image'>
+<!-- Open Graph data -->
+<meta content='Exercism&#39;s Team' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='https://exercism.org/about/team' property='og:url'>
+<meta content='https://dg8krxphbh767.cloudfront.net/meta/og.png' property='og:image'>
+<meta content='Learn who runs Exercism, out trustees, leadership and full-time time.' property='og:description'>
+<meta content='Exercism' property='og:site_name'>
+<meta content='744760440' property='fb:admins'>
+<!-- Favicon -->
+<link href='../meta/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='../meta/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='../meta/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='../site.webmanifest' rel='manifest'>
+
+
+</head>
+<body class='namespace- controller-about action-team theme-light user-signed_out'>
+<header id="site-header"><a class="announcement-bar" href="../donate.html"><div class="lg-container"><span>⚠️ Exercism needs donations to survive 2023. </span><strong>Please support us if you can!</strong><span>⚠️</span></div></a><div class="lg-container container"><a class="exercism-link xl:block" data-turbo-frame="tf-main" href="../index.htm"><img alt="Exercism" class="c-icon" src="../assets/icons/exercism-with-logo-black-b427c06c6a068ba9f391734115e4d22dfa876d1d.svg"></a><div class="docs-search"><div class="c-search-bar"><input class="--search" placeholder="Search Exercism&#39;s docs..."></div></div><nav class="signed-out"><ul><li><a data-turbo-frame="tf-main" class="relative" href="../index.htm"><img role="presentation" alt="" class="c-icon" src="../assets/icons/home-2a4e66176c4816cfbbf83ac43c0be8e1b91e5ed7.svg"><span>Home</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="../tracks.html"><img role="presentation" alt="" class="c-icon" src="../assets/icons/tracks-2e780b460e113a9b07ce4446c988a31c40547b00.svg"><span>Language Tracks</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="../community.html"><img role="presentation" alt="" class="c-icon" src="../assets/icons/community-97592cd275dfff37bf718b70931fc1572363f29f.svg"><span>Community</span><div class="ml-8 text-warning bg-lightOrange px-8 py-6 rounded-100 font-semibold text-[13px] flex items-center"><img role="presentation" alt="" class="c-icon !filter-warning !w-[12px] !h-[12px] !mr-4 !block" src="../assets/icons/sparkle-0eb827302d20b3ed56848b2766f0fa70c7702389.svg"><span>New</span></div></a></li><li><a data-turbo-frame="tf-main" class="relative" href="../mentoring.html"><img role="presentation" alt="" class="c-icon" src="../assets/icons/mentoring-4d1e266458e8e3293b94679b92ccea4aa2cdb58b.svg"><span>Mentor</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="../donate.html"><img role="presentation" alt="" class="c-icon" src="../assets/icons/donate-f0162e3dfad842a240d30ef6d422c5f4a969d857.svg"><span>Donate 💜</span></a></li></ul></nav><div class="auth-buttons"><a class="btn-primary btn-xs" href="../users/sign_up.html">Sign up</a><a class="btn-secondary btn-xs" href="../users/sign_in.html">Log in</a></div><div class="c-react-component c-react-wrapper-dropdowns-dropdown" data-react-id="dropdowns-dropdown" data-react-data="{&quot;menu_button&quot;:{&quot;label&quot;:&quot;Button to open the navigation menu&quot;,&quot;className&quot;:&quot;explore-menu&quot;,&quot;extraClassNames&quot;:[&quot;btn-xs&quot;,&quot;btn-enhanced&quot;],&quot;html&quot;:&quot;\u003cimg role=\&quot;presentation\&quot; alt=\&quot;\&quot; class=\&quot;c-icon\&quot; src=\&quot;https://d24y9kuxp2d7l2.cloudfront.net/assets/icons/hamburger-7e74aa2e28fa2c1297400d23b3994a60439f7d83.svg\&quot; /\u003e\u003cspan\u003eExplore\u003c/span\u003e&quot;},&quot;menu_items&quot;:[{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/\&quot;\u003eHome\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/tracks\&quot;\u003eLanguage Tracks\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/community\&quot;\u003eCommunity\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/mentoring\&quot;\u003eMentoring\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/donate\&quot;\u003eDonate 💜\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link donate&quot;}]}" data-react-hydrate="false"></div></div></header>
+<turbo-frame data-turbo-action="advance" id="tf-main"><div class="c-about-nav"><div class="lg-container container"><ul><li><a href="../about.html">About Exercism</a></li><li><a href="impact.html">Our Impact</a></li><li class="selected"><a href="team.html">Team</a></li><li><a href="/about/supporters/individuals">Supporters</a></li><li><a href="/about/supporters/organisations">Supporting Orgs</a></li></ul></div></div>
+<div id='page-team'>
+<header class='pb-32 md:pb-64'>
+<div class='lg-container flex flex-col items-center c-shapes c-shapes-1'>
+<div class='flex items-center mb-16 md:mb-20'>
+<img role="presentation" alt="" class="c-icon icon" src="../assets/icons/contributing-header-50cfef1577c39259e834674f45f34f196785d3ea.svg">
+<h1 class='text-h3 text-center'>Our Team</h1>
+</div>
+<h2 class='text-h0 mb-20 text-center'>Exercism is built by people from all over the world  🙌</h2>
+</div>
+<div class='md-container flex flex-col items-center'>
+<div class='flex flex-col-reverse md:flex-col items-center'>
+<div class='info md:mb-32'>
+<div class='stats flex items-center flex-col md:flex-row'>
+<div class='stat mb-8 md:mb-0'>Over 6,000 contributors</div>
+<div class='divider'>&middot;</div>
+<div class='stat mb-8 md:mb-0'>231 countries</div>
+<div class='divider'>&middot;</div>
+<div class='stat'>287 GitHub repositories</div>
+</div>
+</div>
+<div class='flex flex-col items-center mb-28 md:mb-0'>
+<hr class='c-divider mb-32'>
+<img alt="A world map containing avatars of Exercism contributors" class="map w-100" src="../assets/world-map-dee6c568ffcf836ba56816f08dccefebaaf05cf6.png">
+</div>
+</div>
+</div>
+</header>
+<article>
+<div class='md-container'>
+<div class='info-box bg-evenLighterBlue px-32 md:px-48 py-24 md:py-40 flex flex-col md:flex-row md:items-center mb-64'>
+<div class='info'>
+<h2 class='text-h2 mb-12'>Thousands of people have supported our vision and helped build Exercism.</h2>
+<p class='text-p-xlarge mr-40'>Exercism relies on leadership team and staff, a wider team of approximately one hundred maintainers and key contributors, and small contributions from thousands of individuals. Beyond these contributions to our product, tens of thousands of members of our community have contributed by giving feedback and help to others.</p>
+</div>
+<img role="presentation" alt="" class="c-icon mt-32 md:mt-0 self-center md:ml-auto" src="../assets/graphics/community-solutions-37eb56c220168f0f3095ac2d1c3f83904c4b00f7.svg">
+</div>
+<section class='leadership-team mb-40'>
+<header class='mb-32'>
+<img role="presentation" alt="" class="c-icon" src="../assets/icons/leadership-team-2f7221a6b622aff3c4fab0e9e5af07d04f9f9caf.svg">
+<h2 class='text-h3 mb-12'>Leadership Team</h2>
+<p class='text-p-large'>Our leadership team manage the strategic and organisational sides of Exercism. They are responsible for fulfilling our mission statement and maintaining our values.</p>
+</header>
+<div class='grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32'>
+<div class='person'>
+<img alt="An image of Katrina" class="avatar" src="../assets/team/katrina-5bedca4186a1f3779fdafab9bc76f97f5dca80a2.jpg">
+<div class='details'>
+<h3>
+<a target="_blank" rel="noreferrer" href="https://exercism.github.io/kytrinyx/">Katrina Owen</a>
+</h3>
+<div class='handle'>Co-founder &amp; Director</div>
+<p>Katrina is the original creator of Exercism. She is co-author of <a href="https://sandimetz.com/99bottles">99 Bottles of OOP</a>. Polyglot developer and Ruby Hero award winner, with a degree in Molecular Biology. Cares deeply about open-source and contributes to several projects outside of Exercism.</p>
+<ul class='links'>
+<li>
+<a target="_blank" rel="noreferrer" href="https://exercism.github.io/kytrinyx/"><img role="presentation" alt="" class="c-icon" src="../assets/icons/link-78eb1e98cf552e6c02e26fcbc1776d657ac884af.svg">
+<span>Katrina's Personal Site</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://github.com/kytrinyx"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+<span>GitHub</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/kytrinyx"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+<span>Twitter</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='person'>
+<img alt="An image of Jeremy Walker" class="avatar" src="../assets/team/jeremy-walker-ddb0b72f2ec8545c73decdf361984a8e80295659.jpg">
+<div class='details'>
+<h3>
+<a target="_blank" rel="noreferrer" href="https://ihid.info">Jeremy Walker</a>
+</h3>
+<div class='handle'>Co-founder &amp; CEO</div>
+<p>Jeremy is an entrepreneur and software developer, who's passionate about equality and opportunity. He has co-founded various organisations, including Meducation, Wondr Medical, and <a href="https://kaido.org">Kaido</a>, and holds a patent for AI used in heart surgery.</p>
+<ul class='links'>
+<li>
+<a target="_blank" rel="noreferrer" href="https://ihid.info"><img role="presentation" alt="" class="c-icon" src="../assets/icons/link-78eb1e98cf552e6c02e26fcbc1776d657ac884af.svg">
+<span>Jeremy's Personal Site</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://github.com/iHiD"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+<span>GitHub</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/iHiD"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+<span>Twitter</span>
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class='staff-team mb-40'>
+<header class='mb-32'>
+<img role="presentation" alt="" class="c-icon" src="../assets/icons/staff-team-62b23f5b125f1891d50f50b376c7dcdd7df600aa.svg">
+<h2 class='text-h3 mb-12'>Staff</h2>
+<p class='text-p-large'>Our staff manage our website, the CLI and the operational side of Exercism, ensuring that we provide a safe and reliable experience for everyone using Exercism.</p>
+</header>
+<div class='grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32'>
+<div class='person'>
+<img alt="An image of Erik Schierboom" class="avatar" src="../assets/team/erik-9e3fafa12210d1cfe737a3e86dc3260b9ff2cf44.jpg">
+<div class='details'>
+<h3>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/ErikSchierboom">Erik Schierboom</a>
+</h3>
+<div class='handle'>Head of Open Source</div>
+<p>Erik is a polyglot developer who loves learning new languages. He builds the software and infrastructure that powers the open-source elements of the platform, ensuring each track is a joy to work with. He was a top Exercism volunteer before joining full-time.</p>
+<ul class='links'>
+<li>
+<a target="_blank" rel="noreferrer" href="https://www.erikschierboom.com"><img role="presentation" alt="" class="c-icon" src="../assets/icons/link-78eb1e98cf552e6c02e26fcbc1776d657ac884af.svg">
+<span>Erik's personal site</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://github.com/erikschierboom"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+<span>GitHub</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/erikschierboom"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+<span>Twitter</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='person'>
+<img alt="An image of Taiyab Raja" class="avatar" src="../assets/team/taiyab-45c9e51af56ba10724976bb71f33a2bf15f57783.jpg">
+<div class='details'>
+<h3>
+<a target="_blank" rel="noreferrer" href="https://taiyab.co.uk/">Taiyab Raja</a>
+</h3>
+<div class='handle'>UX/UI Designer</div>
+<p>Taiyab is a seasoned UI/UX designer responsible for designing Exercism v3. If you think Exercism looks and feels awesome, he’s the man to thank. Taiyab enjoys all things startups, design and entrepreneurship.</p>
+<ul class='links'>
+<li>
+<a target="_blank" rel="noreferrer" href="https://taiyab.co.uk"><img role="presentation" alt="" class="c-icon" src="../assets/icons/link-78eb1e98cf552e6c02e26fcbc1776d657ac884af.svg">
+<span>Taiyab Raja's Portfolio</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/taiyab"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+<span>Twitter</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://github.com/taiyab"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+<span>GitHub</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='person'>
+<img alt="An image of Loretta Murray" class="avatar" src="../assets/team/loretta-49184cf1d0158309973bf307a7cd16f364a20910.jpg">
+<div class='details'>
+<h3>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/LorettaBMThink">Loretta Murray</a>
+</h3>
+<div class='handle'>Head of Fundraising and Partnerships</div>
+<p>Loretta is motivated by the transformational power of fundraising and is a qualified business coach with a passion for developing fundraisers&apos; skills. Out of work she spends her time with family and friends, walking her two feisty little Border Terriers and reading.</p>
+<ul class='links'>
+<li>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/LorettaBMThink"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+<span>Twitter</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://github.com/LorettaExercism"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+<span>GitHub</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='person'>
+<img alt="An image of Jonathan Middleton" class="avatar" src="../assets/team/jonathan-fabecc650659569fda7b516e4597118eeeea34eb.jpg">
+<div class='details'>
+<h3>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/jonny_middleton">Jonathan Middleton</a>
+</h3>
+<div class='handle'>Community Manager</div>
+<p>Jonathan loves connecting with people and hearing stories of how people are where they are in life. He is curious to learn and has been slowly getting to grips with programming. He loves the outdoors and has a young family who live in the world's best city...Cape Town, South Africa.  Seeing people gain access to skills that empower and improve life is what drives him every day!</p>
+<ul class='links'>
+<li>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/jonny_middleton"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+<span>Twitter</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://github.com/jonathandmiddleton"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+<span>GitHub</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class='person'>
+<img alt="An image of Aron Demeter" class="avatar" src="../assets/team/aron-69b4750a561ba356f804ebe557b0a089151a8a20.jpg">
+<div class='details'>
+<h3>
+<a target="_blank" rel="noreferrer" href="https://github.com/dem4ron">Áron Demeter</a>
+</h3>
+<div class='handle'>Front-end Developer</div>
+<p>Áron is a self-taught developer who gets excited about discovering interrelations between things. He has a Master's degree in classical piano performance. In his freetime he enjoys spending time with his family, learning new languages on Exercism or listening to an opera.</p>
+<ul class='links'>
+<li>
+<a target="_blank" rel="noreferrer" href="https://twitter.com/d4ron1"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+<span>Twitter</span>
+</a></li>
+<li>
+<a target="_blank" rel="noreferrer" href="https://github.com/dem4ron"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+<span>GitHub</span>
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class='alumni-team mb-64'>
+<header class='mb-32'>
+<img role="presentation" alt="" class="c-icon" src="../assets/icons/staff-team-62b23f5b125f1891d50f50b376c7dcdd7df600aa.svg">
+<h2 class='text-h3 mb-12'>Alumni</h2>
+<p class='text-p-large'>People who have previously worked full-time at Exercism and since moved onto new adventures. Their legacies are gratefully remembered!</p>
+</header>
+<div class='grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32'>
+<div class='person'>
+<img alt="An image of Nicole Chalmers" class="avatar" src="../assets/team/nicole-0edcfb1f95519b4866a2c6483add092cf9bec0d5.jpg">
+<div class='details'>
+<h3>Nicole Chalmers</h3>
+<p>Nicole is the Head of Product at <a href="https://kaido.org">Kaido</a>. She spent two years as Head of Product for Exercism, guiding us from v1 to v2, and helping set the principles and ideas that still drive Exercism today.</p>
+</div>
+</div>
+<div class='person'>
+<img alt="An image of Charles Care" class="avatar" src="../assets/team/charles-47262ba6c3e4b93065f6f028b61a3e5f0454975d.jpg">
+<div class='details'>
+<h3>Charles Care</h3>
+<p>Charles was part of the team that built Exercism v2, working specifically on the server-side code and infrastructure. He helped build out the first version of our automated mentoring platform, and Github integration.</p>
+</div>
+</div>
+<div class='person'>
+<img alt="An image of Karlo Soriano" class="avatar" src="../assets/team/karlo-cfdc8250864fc6c574377a8071094f43861ab842.jpg">
+<div class='details'>
+<h3>Karlo Soriano</h3>
+<p>Karlo worked on the website part of Exercism. He created most of the website's interactive frontend for v3, and contributed to much of the Rails backend platform.</p>
+</div>
+</div>
+</div>
+</section>
+<section class='grid gird-cols-1 md:grid-cols-3 gap-56'>
+<div class='community-team'>
+<img role="presentation" alt="" class="c-icon" src="../assets/icons/maintaining-f3ab75a0a297f4cd2c62043894f47723cc82aecf.svg">
+<h3>Track Maintainers</h3>
+<p class='text-p-large'>Our maintainers are the lynchpins of the language tracks and exercises on Exercism. They create and organise exercises for each of our 50 languages and help guide us to ensure Exercism teaches students in the most idiomatic way possible.</p>
+<a class="c-prominent-link" href="../contributing/contributors-13.html?category=maintaining"><span>See all Exercism maintainers</span><img role="presentation" alt="" class="c-icon" src="../assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+</div>
+<div class='community-team'>
+<img role="presentation" alt="" class="c-icon" src="../assets/icons/mentoring-4d1e266458e8e3293b94679b92ccea4aa2cdb58b.svg">
+<h3>Mentors</h3>
+<p class='text-p-large'>Our mentors are the human element behind Exercism, providing empathetic feedback on learners' solutions. They are the magic that makes Exercism come alive.</p>
+<a class="c-prominent-link" href="../contributing/contributors-14.html?category=mentoring"><span>See all Exercism mentors</span><img role="presentation" alt="" class="c-icon" src="../assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+</div>
+<div class='community-team'>
+<img role="presentation" alt="" class="c-icon" src="../assets/icons/authoring-1741ad702c0fb211dc1a42b66df21f7c8dfcbf91.svg">
+<h3>Open source contributors</h3>
+<p class='text-p-large'>Exercism could not be the success it is without the contributors of over 2,000 volunteers, who add value in numerous ways, from writing tooling to creating the exercises you solve.</p>
+<a class="c-prominent-link" href="../contributing/contributors-15.html?category=building"><span>See all contributors</span><img role="presentation" alt="" class="c-icon" src="../assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+</div>
+</section>
+</div>
+</article>
+</div>
+
+</turbo-frame>
+<div id='portal-container'></div>
+<div class='c-loading-overlay'></div>
+<footer id="site-footer"><div class='external-section pt-48 pb-0'>
+<div class='lg-container flex flex-col lg:flex-row'>
+<div class='lhs mr-auto mb-20 lg:mb-0'>
+<img role="presentation" alt="" class="c-icon" src="../assets/icons/exercism-with-logo-black-b427c06c6a068ba9f391734115e4d22dfa876d1d.svg">
+<h2 class='text-h3 mb-4'>Code practice and mentorship for everyone</h2>
+<p class='text-p-large'>
+Develop fluency in 67 programming languages
+with our unique blend of learning, practice and mentoring.
+Exercism is fun, effective and
+100% free, forever.
+</p>
+</div>
+<div class='rhs flex lg:ml-24 flex-col sm:flex-row items-stretch sm:items-center'>
+<a class="btn-l btn-primary mb-16 sm:mb-0 sm:mr-32" href="../users/sign_up.html">Sign up for free</a>
+<a class="btn-l btn-enhanced" href="../tracks.html">Explore languages</a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='lg-container'>
+<hr>
+<div class='site-links mt-24 md:mt-56'>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-40'>
+<div class='col'>
+<h3>Editions</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../index.htm">Exercism</a></li>
+<li><a href="/docs/using/editions/teams">Exercism for Teams</a></li>
+<li><a href="/docs/using/editions/research">Exercism Research</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>About</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../about.html">About Exercism</a></li>
+<li><a href="team.html">Our team</a></li>
+<li><a href="../contributing/contributors.html">Contributors</a></li>
+<li><a href="/about/supporters/organisations">Supporting organisations</a></li>
+<li><a href="/about/supporters/individuals">Individual supporters</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Get involved</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../contributing.html">Contribute</a></li>
+<li><a href="../mentoring.html">Mentor</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Legal &amp; policies</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="/docs/using/legal/terms-of-service">Terms of usage</a></li>
+<li><a href="/docs/using/legal/privacy-policy">Privacy policy</a></li>
+<li><a href="/docs/using/legal/cookie-policy">Cookie policy</a></li>
+<li><a href="/docs/using/legal/code-of-conduct">Code of conduct</a></li>
+<li><a href="/docs/using/legal/accessibility">Accessibility statement</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Keep in touch</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../blog.html">Exercism&#39;s blog</a></li>
+<li><a href="https://github.com/exercism/exercism">Discuss on GitHub</a></li>
+<li><a href="/docs/using/contact">Contact us</a></li>
+<li><a href="/docs/using/report-abuse">Report abuse</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Get help</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../docs.html">Exercism&#39;s Docs</a></li>
+<li><a href="/docs/using/getting-started">Getting started</a></li>
+<li><a href="/docs/using/faqs">FAQs</a></li>
+<li><a href="/docs/using/solving-exercises/working-locally">Installing the CLI</a></li>
+<li><a href="../cli-walkthrough.html">Interactive CLI Walkthrough</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='socials mt-24 mb-40 md:mb-56'>
+<a class="icon twitter" href="https://twitter.com/exercism_io"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+</a><a class="icon facebook" href="https://facebook.com/exercism.io"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-facebook-30d7c9862735514b98cc354bc12f460a4a40d26b.svg">
+</a><a class="icon github" href="https://github.com/exercism"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+</a></div>
+<hr>
+<div class='tracks mt-32 md:mt-48 mb-32 md:mb-48 md:items-center'>
+<div class='hidden md:block'>
+<h2 class='text-h3'>Our programming language tracks</h2>
+<hr class='c-divider mt-28 mb-36'>
+</div>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-32'>
+<div class='col'>
+<ul>
+<li><a href="../tracks/8th.html">8th</a></li>
+<li><a href="../tracks/abap.html">ABAP</a></li>
+<li><a href="../tracks/awk.html">AWK</a></li>
+<li><a href="../tracks/ballerina.html">Ballerina</a></li>
+<li><a href="../tracks/bash.html">Bash</a></li>
+<li><a href="../tracks/c.html">C</a></li>
+<li><a href="../tracks/csharp.html">C#</a></li>
+<li><a href="../tracks/cpp.html">C++</a></li>
+<li><a href="../tracks/cfml.html">CFML</a></li>
+<li><a href="../tracks/clojure.html">Clojure</a></li>
+<li><a href="../tracks/clojurescript.html">ClojureScript</a></li>
+<li><a href="../tracks/cobol.html">COBOL</a></li>
+<li><a href="../tracks/coffeescript.html">CoffeeScript</a></li>
+<li><a href="../tracks/common-lisp.html">Common Lisp</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="../tracks/crystal.html">Crystal</a></li>
+<li><a href="../tracks/d.html">D</a></li>
+<li><a href="../tracks/dart.html">Dart</a></li>
+<li><a href="../tracks/delphi.html">Delphi Pascal</a></li>
+<li><a href="../tracks/elixir.html">Elixir</a></li>
+<li><a href="../tracks/elm.html">Elm</a></li>
+<li><a href="../tracks/emacs-lisp.html">Emacs Lisp</a></li>
+<li><a href="../tracks/erlang.html">Erlang</a></li>
+<li><a href="../tracks/fsharp.html">F#</a></li>
+<li><a href="../tracks/fortran.html">Fortran</a></li>
+<li><a href="../tracks/gleam.html">Gleam</a></li>
+<li><a href="../tracks/go.html">Go</a></li>
+<li><a href="../tracks/groovy.html">Groovy</a></li>
+<li><a href="../tracks/haskell.html">Haskell</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="../tracks/java.html">Java</a></li>
+<li><a href="../tracks/javascript.html">JavaScript</a></li>
+<li><a href="../tracks/jq.html">jq</a></li>
+<li><a href="../tracks/julia.html">Julia</a></li>
+<li><a href="../tracks/kotlin.html">Kotlin</a></li>
+<li><a href="../tracks/lfe.html">LFE</a></li>
+<li><a href="../tracks/lua.html">Lua</a></li>
+<li><a href="../tracks/mips.html">MIPS Assembly</a></li>
+<li><a href="../tracks/nim.html">Nim</a></li>
+<li><a href="../tracks/objective-c.html">Objective-C</a></li>
+<li><a href="../tracks/ocaml.html">OCaml</a></li>
+<li><a href="../tracks/perl5.html">Perl</a></li>
+<li><a href="../tracks/pharo-smalltalk.html">Pharo</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="../tracks/php.html">PHP</a></li>
+<li><a href="../tracks/plsql.html">PL/SQL</a></li>
+<li><a href="../tracks/prolog.html">Prolog</a></li>
+<li><a href="../tracks/purescript.html">PureScript</a></li>
+<li><a href="../tracks/python.html">Python</a></li>
+<li><a href="../tracks/r.html">R</a></li>
+<li><a href="../tracks/racket.html">Racket</a></li>
+<li><a href="../tracks/raku.html">Raku</a></li>
+<li><a href="../tracks/reasonml.html">ReasonML</a></li>
+<li><a href="../tracks/red.html">Red</a></li>
+<li><a href="../tracks/ruby.html">Ruby</a></li>
+<li><a href="../tracks/rust.html">Rust</a></li>
+<li><a href="../tracks/scala.html">Scala</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="../tracks/scheme.html">Scheme</a></li>
+<li><a href="../tracks/sml.html">Standard ML</a></li>
+<li><a href="../tracks/swift.html">Swift</a></li>
+<li><a href="../tracks/tcl.html">Tcl</a></li>
+<li><a href="../tracks/typescript.html">TypeScript</a></li>
+<li><a href="../tracks/unison.html">Unison</a></li>
+<li><a href="../tracks/vlang.html">V</a></li>
+<li><a href="../tracks/vbnet.html">VB.NET</a></li>
+<li><a href="../tracks/vimscript.html">Vim script</a></li>
+<li><a href="../tracks/wasm.html">WebAssembly</a></li>
+<li><a href="../tracks/wren.html">Wren</a></li>
+<li><a href="../tracks/x86-64-assembly.html">x86-64 Assembly</a></li>
+<li><a href="../tracks/zig.html">Zig</a></li>
+</ul>
+</div>
+<div class='col hidden md:block mt-32 xl:mt-0'>
+<h3 class='text-h6'>Want to add a language track to Exercism?</h3>
+<p class='text-p-base'>
+<a href="https://github.com/exercism/exercism/issues/new?title=Create%20new%20track%20for%20[LANGUAGE]">Open an issue</a>
+and let's discuss it.
+</p>
+</div>
+</div>
+</div>
+<hr>
+<div class='legals mt-24 md:mt-32 mb-32 md:mb-40 flex md:items-center flex-col md:flex-row'>
+<div class='company mb-16 md:mb-0 md:mr-32'>
+Exercism is not-for-profit organisation
+<a href="https://find-and-update.company-information.service.gov.uk/company/11733062">registered in the UK</a>.
+Its trustees are <a href="https://exercism.github.io/kytrinyx/">Katrina Owen</a>, <a href="https://ihid.info/">Jeremy Walker</a> and <a href="https://erikschierboom.com/">Erik Schierboom</a>.
+</div>
+<div class='copyright md:ml-auto'>
+© 2023 Exercism
+</div>
+</div>
+</div>
+</footer>
+<!-- Prefetch the deferred packs which are needed on other pages -->
+<link as='script' href='../assets/internal-debb09695d9f83daefa4efec219cfd4472a99174.js' rel='prefetch'>
+
+</body>
+</html>
+<!-- TODO: Add test for this! -->
