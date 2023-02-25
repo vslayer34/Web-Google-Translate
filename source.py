@@ -20,7 +20,7 @@ to_translat = {}
 def add_to_dict(sentence: str, translated_sentence: str):
     to_translat[sentence] = translated_sentence
     # to_translat.update({sentence: translate_sentence})
-    print(to_translat)
+    # print(to_translat)
 
 
 
@@ -42,16 +42,16 @@ def open_file(file_name: str):
     file_handle = codecs.open(folder_path, 'r', "utf-8")
     
     for line in file_handle.readlines():
-        
+        # x = input()
         print(line)
         new_line = check_sentence(line)
         # print("XXXXXXXXXX")
-        print(new_line)
+        # print(new_line)
         if new_line.strip() != "":
             translated_line = translate_sentence(new_line)
             add_to_dict(new_line, translated_line)
             
-        write_file(line, file_name)
+        write_file(line, file_name, new_line)
 
     file_handle.close()
 
@@ -66,11 +66,41 @@ def translate_sentence(text: str):
 
 
 
-def write_file(text: str, file_name: str):
+def write_file(text: str, file_name: str, text_to_be_replaced):
     folder_path = script_path + r"\Translated_Website" + f"\{file_name}"
     file_handle = codecs.open(folder_path, "a+", "utf-8")
-    file_handle.write(text)
+    translated_text = apply_translation(text, text_to_be_replaced)
+    # if translated_text == None:
+    #     translated_text = text
+    file_handle.write(translated_text)
     file_handle.close()
+
+
+    
+def apply_translation(text: str, text_to_be_replaced):
+    for key in to_translat.keys():
+        # if key.strip() in text.strip():
+        #     print("----------------------")
+        #     print(key)
+        #     print(to_translat[key])
+        #     print(text)
+        #     new_text = text.replace(key.strip(), to_translat[key])
+        #     print("replaced")
+        #     print(new_text)
+        #     print("----------------------")
+        #     return new_text
+        
+        if key.strip() == text_to_be_replaced.strip():
+            print("----------------------")
+            print(key)
+            print(to_translat[key])
+            print(text)
+            new_text = text.replace(text_to_be_replaced.strip(), to_translat[key])
+            print("replaced")
+            print(new_text)
+            print("----------------------")
+            return new_text
+    return text
 
 
 ##################################################################################################

@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+<!-- Do this first - we want things loading ASAP. -->
+<link href='https://fonts.googleapis.com' rel='preconnect'>
+<link crossorigin='true' href='https://fonts.gstatic.com' rel='preconnect'>
+<link crossorigin='true' href='https://d24y9kuxp2d7l2.cloudfront.net' rel='preconnect'>
+<!-- We always want this rendered at the start. -->
+<link rel="stylesheet" href="../assets/website-986ddebd9a7dab58d92347bbf4cd918dffac7b6f.css" data-turbo-track="reload">
+<link rel="stylesheet" href="../css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&amp;display=swap">
+<script data-api='/usage/api/event' data-domain='exercism.org' defer="" src='../usage/js/script.js'></script>
+<link rel="stylesheet" href="../assets/internal-09019deeb529b28f6285d0e865647c9765452bbd.css" data-turbo-track="reload">
+<link rel="stylesheet" href="../assets/application-69fb7b3abaf2e7663cc89f6a267aa2796b38294d.css" data-turbo-track="reload">
+<script src="../assets/core-3f789adc5de44e6b577efdbf473e275a77791fb6.js" crossorigin="anonymous" type="module" data-turbo-track="reload" data-turbo-eval="false"></script>
+<script src="../assets/application-72c1fd29327ab2a52cdaa3435b28a2ae66201373.js" crossorigin="anonymous" type="module" data-turbo-track="reload" data-turbo-eval="false"></script>
+
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="-JyvedopYgpVJ9kZuzC8WtvxNPMxGTocDoIiamycP2P7jHsR64nbhWSHncoE9_m79zo4e2ZM918-EuPVL15kcA">
+
+<meta name="action-cable-url" content="wss://exercism.org/cable">
+<meta content='no-cache' name='turbo-cache-control'>
+<meta content='language-servers-925786784.eu-west-2.elb.amazonaws.com' name='language-server-url'>
+<meta content='https://exercism.org/api/v2/bug_reports' name='bug-reports-url'>
+<meta content='https://exercism.org/api/v2/markdown/parse' name='parse-markdown-url'>
+<meta content='' name='user-id'>
+<meta content='pk_live_51IDGMXEoOT0Jqx0UGsyx7fUW7iojTCPobNQDDoVdVY64qsyeNyFDqQRAgXSdj2HF8mYzPGxsBWIEFPnenq0lEhLH00x7KfG52T' name='stripe-publishable-key'>
+<title>Bash on Exercism</title>
+<meta content='Get fluent in Bash by solving 89 exercises. And then level up with mentoring from our world-class team.' name='description'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1, viewport-fit=cover' name='viewport'>
+<!-- Twitter Card data -->
+<meta content='summary_large_image' name='twitter:card'>
+<meta content='@exercism_io' name='twitter:site'>
+<meta content='@exercism_io' name='twitter:creator'>
+<meta content='https://exercism.org/tracks/bash' name='twitter:url'>
+<meta content='Bash on Exercism' name='twitter:title'>
+<meta content='Get fluent in Bash by solving 89 exercises. And then level up with mentoring from our world-class team.' name='twitter:description'>
+<meta content='https://dg8krxphbh767.cloudfront.net/meta/og.png' name='twitter:image'>
+<!-- Open Graph data -->
+<meta content='Bash on Exercism' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='https://exercism.org/tracks/bash' property='og:url'>
+<meta content='https://dg8krxphbh767.cloudfront.net/meta/og.png' property='og:image'>
+<meta content='Get fluent in Bash by solving 89 exercises. And then level up with mentoring from our world-class team.' property='og:description'>
+<meta content='Exercism' property='og:site_name'>
+<meta content='744760440' property='fb:admins'>
+<!-- Favicon -->
+<link href='../meta/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='../meta/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='../meta/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='../site.webmanifest' rel='manifest'>
+
+
+</head>
+<body class='namespace- controller-tracks action-show theme-light user-signed_out'>
+<header id="site-header"><a class="announcement-bar" href="../donate.html"><div class="lg-container"><span>⚠️ Exercism needs donations to survive 2023. </span><strong>Please support us if you can!</strong><span>⚠️</span></div></a><div class="lg-container container"><a class="exercism-link xl:block" data-turbo-frame="tf-main" href="../index.htm"><img alt="Exercism" class="c-icon" src="../assets/icons/exercism-with-logo-black-b427c06c6a068ba9f391734115e4d22dfa876d1d.svg"></a><div class="docs-search"><div class="c-search-bar"><input class="--search" placeholder="Search Exercism&#39;s docs..."></div></div><nav class="signed-out"><ul><li><a data-turbo-frame="tf-main" class="relative" href="../index.htm"><img role="presentation" alt="" class="c-icon" src="../assets/icons/home-2a4e66176c4816cfbbf83ac43c0be8e1b91e5ed7.svg"><span>Home</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="../tracks.html"><img role="presentation" alt="" class="c-icon" src="../assets/icons/tracks-2e780b460e113a9b07ce4446c988a31c40547b00.svg"><span>Language Tracks</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="../community.html"><img role="presentation" alt="" class="c-icon" src="../assets/icons/community-97592cd275dfff37bf718b70931fc1572363f29f.svg"><span>Community</span><div class="ml-8 text-warning bg-lightOrange px-8 py-6 rounded-100 font-semibold text-[13px] flex items-center"><img role="presentation" alt="" class="c-icon !filter-warning !w-[12px] !h-[12px] !mr-4 !block" src="../assets/icons/sparkle-0eb827302d20b3ed56848b2766f0fa70c7702389.svg"><span>New</span></div></a></li><li><a data-turbo-frame="tf-main" class="relative" href="../mentoring.html"><img role="presentation" alt="" class="c-icon" src="../assets/icons/mentoring-4d1e266458e8e3293b94679b92ccea4aa2cdb58b.svg"><span>Mentor</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="../donate.html"><img role="presentation" alt="" class="c-icon" src="../assets/icons/donate-f0162e3dfad842a240d30ef6d422c5f4a969d857.svg"><span>Donate 💜</span></a></li></ul></nav><div class="auth-buttons"><a class="btn-primary btn-xs" href="../users/sign_up.html">Sign up</a><a class="btn-secondary btn-xs" href="../users/sign_in.html">Log in</a></div><div class="c-react-component c-react-wrapper-dropdowns-dropdown" data-react-id="dropdowns-dropdown" data-react-data="{&quot;menu_button&quot;:{&quot;label&quot;:&quot;Button to open the navigation menu&quot;,&quot;className&quot;:&quot;explore-menu&quot;,&quot;extraClassNames&quot;:[&quot;btn-xs&quot;,&quot;btn-enhanced&quot;],&quot;html&quot;:&quot;\u003cimg role=\&quot;presentation\&quot; alt=\&quot;\&quot; class=\&quot;c-icon\&quot; src=\&quot;https://d24y9kuxp2d7l2.cloudfront.net/assets/icons/hamburger-7e74aa2e28fa2c1297400d23b3994a60439f7d83.svg\&quot; /\u003e\u003cspan\u003eExplore\u003c/span\u003e&quot;},&quot;menu_items&quot;:[{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/\&quot;\u003eHome\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/tracks\&quot;\u003eLanguage Tracks\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/community\&quot;\u003eCommunity\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/mentoring\&quot;\u003eMentoring\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/donate\&quot;\u003eDonate 💜\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link donate&quot;}]}" data-react-hydrate="false"></div></div></header>
+<turbo-frame data-turbo-action="advance" id="tf-main"><div id='page-track-about'>
+<header class="c-track-header"><div class='lg-container container'>
+<div class='flex items-center'>
+<div class='flex-grow'>
+<div class='flex items-center relative lg:static'>
+<div class="c-react-component c-react-wrapper-dropdowns-track-menu" data-react-id="dropdowns-track-menu" data-react-data="{&quot;track&quot;:{&quot;slug&quot;:&quot;bash&quot;,&quot;title&quot;:&quot;Bash&quot;,&quot;course&quot;:false,&quot;num_concepts&quot;:0,&quot;num_exercises&quot;:89,&quot;web_url&quot;:&quot;https://exercism.org/tracks/bash&quot;,&quot;icon_url&quot;:&quot;https://dg8krxphbh767.cloudfront.net/tracks/bash.svg&quot;,&quot;tags&quot;:[&quot;Scripts&quot;,&quot;Procedural&quot;,&quot;Interpreted&quot;,&quot;Weak&quot;,&quot;Linux&quot;,&quot;Mac OSX&quot;,&quot;Windows&quot;],&quot;last_touched_at&quot;:null,&quot;is_new&quot;:false,&quot;links&quot;:{&quot;self&quot;:&quot;https://exercism.org/tracks/bash&quot;,&quot;exercises&quot;:&quot;https://exercism.org/tracks/bash/exercises&quot;,&quot;concepts&quot;:&quot;https://exercism.org/tracks/bash/concepts&quot;}},&quot;links&quot;:{&quot;repo&quot;:&quot;https://github.com/exercism/bash&quot;,&quot;documentation&quot;:&quot;https://exercism.org/docs/tracks/bash&quot;}}" data-react-hydrate="false"></div>
+<img alt="Bash" class="c-track-icon mr-16 lg:mr-20 --bash" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="bash.svg">
+<div class='flex flex-col md:flex-row md:items-center'>
+<div class='text-h1 md:mr-24'>Bash</div>
+<div class='students hidden lg:flex items-center'>
+<img role="presentation" alt="" class="c-icon" src="../assets/icons/students-caf4c344871c7bb1e0988f33a3ead0944160d4e0.svg">
+<span>
+42,260
+students
+</span>
+</div>
+<div class='tags lg:hidden mt-8'></div>
+</div>
+</div>
+<div class='tabs'><a class="c-tab-2 selected" href="bash.html"><img role="presentation" alt="" class="c-icon" src="../assets/icons/info-circle-0db7a70f51493909ba515887222c1c7cf27e02ad.svg"><span>About</span></a><a class="c-tab-2 " href="/tracks/bash/exercises"><img role="presentation" alt="" class="c-icon" src="../assets/icons/exercises-8a7df249fbfb76cc18efbbee844d9bd742830404.svg"><span>Exercises</span></a><a class="c-tab-2 " href="/tracks/bash/build"><img role="presentation" alt="" class="c-icon" src="../assets/icons/building-063652461094d5ce92b137453e734fcff2caaf68.svg"><span>Build Status</span></a></div>
+</div>
+<div class='mr-84 hidden lg:flex items-center ml-auto'>
+<div class='tags mr-32'></div>
+<a class="people hidden lg:flex " href="../contributing/contributors-11.html?track_slug=bash"><div class='c-faces'>
+<div class='face'><div class="c-avatar" style="background-image:url(&quot;../u/122470&quot;)"><img alt="Uploaded avatar of glennj" class="sr-only" src="../u/122470?v=4"></div></div>
+<div class='face'><div class="c-avatar" style="background-image:url(&quot;https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVVJIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8e6d52a2d2b0cd98ed806b15170b87203f3d2913/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--cf22b5230692a68d08c0320d3b3745f81d8aca85/profile-leek.jpg&quot;)"><img alt="Uploaded avatar of IsaacG" class="sr-only" src="https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVVJIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8e6d52a2d2b0cd98ed806b15170b87203f3d2913/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--cf22b5230692a68d08c0320d3b3745f81d8aca85/profile-leek.jpg"></div></div>
+<div class='face'><div class="c-avatar" style="background-image:url(&quot;https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDRwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d174614f4f4a1f7e7bf124f267a1b8a59c2a337e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--0ce78b9eabfa0afc6e1df3233850ff362c85b5dc/KarlMarx.png&quot;)"><img alt="Uploaded avatar of guygastineau" class="sr-only" src="https://exercism.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDRwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d174614f4f4a1f7e7bf124f267a1b8a59c2a337e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--0ce78b9eabfa0afc6e1df3233850ff362c85b5dc/KarlMarx.png"></div></div>
+</div>
+<div class='stats'>
+<div class='contributors'>52 contributors</div>
+<div class='mentors'>640 mentors</div>
+</div>
+</a></div>
+</div>
+</div>
+</header>
+<header class='track-header c-header-with-bg'>
+<div class='lg-container container'>
+<div class='info md:mr-64 flex flex-col'>
+<h1 class='text-h1'>Want to learn and master Bash?</h1>
+<p class='text-p-xlarge'>
+Join Exercism’s Bash Track for access to
+<em class='c-underline'>
+<strong>89 exercises</strong>
+</em>
+with automatic analysis
+of your code and
+<em class='c-underline'><strong>personal mentoring</strong></em>,
+all
+<em class='c-underline'>
+<strong>100% free.</strong>
+</em>
+<!-- = @track.blurb -->
+</p>
+<div class='btns flex flex-col sm:flex-row'>
+<form class="button_to" method="post" action="/tracks/bash/join"><button class="btn-primary btn-l mb-24 sm:mb-0 sm:mr-24 w-100 sm:w-auto" type="submit"><img role="presentation" alt="" class="c-icon" src="../assets/icons/plus-4218d8787a84df23418f18a866369ea5a5b0ec12.svg">
+<span>Join the Bash Track</span>
+</button><input type="hidden" name="authenticity_token" value="bVmoMXRjJbqz_sMLXURS8yaWe079cVvwl3JMxEqkeFhaz2Ne973066Asuv-iHUPc99c9XZVSRGSlMZwky2qRqg" autocomplete="off"></form><a class="btn-secondary btn-l" href="/tracks/bash/exercises">Explore exercises
+</a></div>
+</div>
+<div class='graphics hidden md:grid'>
+<img alt="Bash" class="c-track-icon  --bash" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="bash.svg">
+</div>
+</div>
+</header>
+<section class='about-section pb-48 md:pb-64'>
+<div class='lg-container'>
+<div class='inner flex-col md:flex-row'>
+<div class='info mb-32 md:mb-0'>
+<div class='c-textual-content --large'>
+<h2>About Bash</h2>
+<div class="c-react-component c-react-wrapper-common-expander" data-react-id="common-expander" data-react-data="{&quot;content&quot;:&quot;\u003cp\u003eBash is the language that you will learn to love!\u003c/p\u003e\n\u003cp\u003eMany of your everyday computer tasks can be done using the concise scripts\nit can produce.  You will soon learn that while most things can be done\nthrough a Graphical User Interface, it can actually be vastly faster to use\nthis powerful language!  The command interpreter typically runs in a text\nwindow, where users may input commands (operations may also come from some\nfiles, also known as Bash scripts).\u003c/p\u003e\n\u003cp\u003eMore formally, Bash (an acronym for \u003cstrong\u003eB\u003c/strong\u003eourne-\u003cstrong\u003ea\u003c/strong\u003egain \u003cstrong\u003esh\u003c/strong\u003eell, a pun\naround the Bourne shell and the term \&quot;born-again\&quot;) is a Unix command\ninterpreter.  Offering a number of improvements over several other shells\n(Bash has some useful functionality in regards to command history, job\ncontrol and command line editing).\u003c/p\u003e\n\u003cp\u003eA really good way to think about Bash is the following:\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eAlthough most users think of the shell as an interactive command\ninterpreter, it is really a programming language in which each statement\nruns a command.  Because it must satisfy both the interactive and\nprogramming aspects of command execution, it is a strange language, shaped\nas much by history as by design.  —- Brian Kernighan \u0026amp; Rob Pike\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cem\u003ecite: Kernighan, Brian W.; Pike, Rob (1984). The UNIX Programming Environment. Englewood Cliffs: Prentice-Hall. ISBN 0-13-937699-2.\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eThough it was first released several decades ago after being written by\nBrian Fox of the Free Software Foundation, Bash is still used across the\nworld every day!  From automation to stitching a project together, the\nlanguage is still as versatile as it ever was.  Another benefit of the\nlanguage&#39;s age is the rich documentation you&#39;ll find surrounding it.  If\nyou&#39;re ever stuck and don&#39;t know exactly how to implement an exercise, a\ngreat place to start is the built-in help, available through the use of\n\u003ccode\u003einfo bash\u003c/code\u003e or \u003ccode\u003eman bash\u003c/code\u003e.\u003c/p\u003e\n\u003cp\u003eThis track is to help you gain some experience in this wonderful scripting language.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHappy Bash&#39;ing\u003c/strong\u003e\u003c/p\u003e\n&quot;,&quot;content_is_safe&quot;:true,&quot;button_text_compressed&quot;:&quot;Read more on Bash&quot;,&quot;button_text_expanded&quot;:&quot;Read less&quot;,&quot;class_name&quot;:null}" data-react-hydrate="false"></div>
+</div>
+</div>
+<pre><code class='lang-bash'>#!/bin/bash
+
+echo &quot;Hello, World!&quot;</code></pre>
+</div>
+</div>
+</section>
+<section class='exercises-section'>
+<div class='lg-container'>
+<div class="c-icon header-icon --hex"><img role="presentation" alt="" src="../assets/icons/exercises-8a7df249fbfb76cc18efbbee844d9bd742830404.svg"></div>
+<div class='inner'>
+<div class='info'>
+<h2>
+<em class='c-underline'>89 coding exercises</em>
+for Bash on Exercism.
+From Satellite to Wordy.
+</h2>
+<hr class='c-divider'>
+<p>Get better at programming through fun, rewarding coding exercises that test your understanding of concepts with Exercism.</p>
+<div class='exercises'>
+<a class="exercise" href="/tracks/bash/exercises/satellite"><img alt="Satellite" class="c-icon c-exercise-icon " onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;;" src="../exercises/satellite.svg">
+<div class='exercise-info'>
+<h3>Satellite</h3>
+<p>Rebuild binary trees from pre-order and in-order traversals.</p>
+</div>
+<img role="presentation" alt="" class="c-icon action-icon" src="../assets/icons/chevron-right-4edf20ec1116acf2e371e8ff03809451274a7b32.svg">
+</a><a class="exercise" href="/tracks/bash/exercises/grep"><img alt="Grep" class="c-icon c-exercise-icon " onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;;" src="../exercises/grep.svg">
+<div class='exercise-info'>
+<h3>Grep</h3>
+<p>Search a file for lines matching a regular expression pattern. Return the line number and contents of each matching line.</p>
+</div>
+<img role="presentation" alt="" class="c-icon action-icon" src="../assets/icons/chevron-right-4edf20ec1116acf2e371e8ff03809451274a7b32.svg">
+</a><a class="exercise" href="/tracks/bash/exercises/wordy"><img alt="Wordy" class="c-icon c-exercise-icon " onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;;" src="../exercises/wordy.svg">
+<div class='exercise-info'>
+<h3>Wordy</h3>
+<p>Parse and evaluate simple math word problems returning the answer as an integer.</p>
+</div>
+<img role="presentation" alt="" class="c-icon action-icon" src="../assets/icons/chevron-right-4edf20ec1116acf2e371e8ff03809451274a7b32.svg">
+</a></div>
+<a class="c-prominent-link" href="/tracks/bash/exercises"><span>See all Bash exercises on Exercism</span><img role="presentation" alt="" class="c-icon" src="../assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+</div>
+<img role="presentation" class="hidden lg:block" width="1264" height="1180" src="../assets/screenshots/exercise-about-71ae1be6f6b48bd43188ed86086c3ebd70c04853.jpg">
+</div>
+</div>
+</section>
+
+
+<section class='upsell-section'>
+<div class='md-container'>
+<div class='feature flex-col md:flex-row'>
+<div class='info'>
+<img role="presentation" alt="" class="c-icon small-icon" src="../assets/icons/logo-42e9b829cf6816496069a62608cb51e7c13624bd.svg">
+<h3>Get mentored the Bash way</h3>
+<p>
+Every language has its own way of doing things.
+Bash is no different.
+Our mentors will help you learn to think like a Bash developer and how to write idiomatic code in Bash.
+Once you've solved an exercise, submit it to our volunteer team, and they'll give you hints, ideas, and feedback on how to make it feel more like what you'd normally see in Bash - they'll help you discover the things you don't know that you don't know.
+</p>
+<a class="c-prominent-link" href="/docs/using/feedback/mentor"><span>Learn more about mentoring</span><img role="presentation" alt="" class="c-icon" src="../assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+</div>
+<div class='flex-shrink-0 flex-grow grid place-items-center mt-32 md:mt-0 md:ml-64'>
+<img role="presentation" alt="" class="c-icon graphic" src="../assets/graphics/mentoring-20449daf6b95a22d0abd6aae371a8eb9d79991d5.svg">
+</div>
+</div>
+<div class='feature flex-col md:flex-row-reverse'>
+<div class='info'>
+<img role="presentation" alt="" class="c-icon small-icon" src="../assets/icons/mentoring-4d1e266458e8e3293b94679b92ccea4aa2cdb58b.svg">
+<h3>Community-sourced Bash exercises</h3>
+<p>
+The Bash track on Exercism has
+89 exercises to help you write better code.
+Discover new exercises as you progress and get engrossed in learning new concepts and improving the way you currently write.
+</p>
+<a class="c-prominent-link" href="/tracks/bash/exercises"><span>See all Bash exercises</span><img role="presentation" alt="" class="c-icon" src="../assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+</div>
+<div class='flex-shrink-0 flex-grow grid place-items-center mt-32 md:mt-0 md:mr-64'>
+<img role="presentation" alt="" class="c-icon graphic" src="../assets/graphics/community-solutions-37eb56c220168f0f3095ac2d1c3f83904c4b00f7.svg">
+</div>
+</div>
+<div class='cta'>
+<img alt="Bash" class="c-track-icon  --bash" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="bash.svg">
+<h3>Get started with the Bash track</h3>
+<p>The best part, it’s 100% free for everyone.</p>
+<form class="button_to" method="post" action="/tracks/bash/join"><button class="btn-primary btn-m w-100 sm:w-auto" type="submit">Join the Bash track</button><input type="hidden" name="authenticity_token" value="RW_hgy874aAGz6xucdBnfRppjVsi-_NXrJoU4WM34pty-SrsrOUw8RUd1ZqOiXZSyyjLSErY7MOe2cQB4vkLaQ" autocomplete="off"></form>
+</div>
+</div>
+</section>
+
+</div>
+
+</turbo-frame>
+<div id='portal-container'></div>
+<div class='c-loading-overlay'></div>
+<footer id="site-footer"><div class='external-section pt-48 pb-0'>
+<div class='lg-container flex flex-col lg:flex-row'>
+<div class='lhs mr-auto mb-20 lg:mb-0'>
+<img role="presentation" alt="" class="c-icon" src="../assets/icons/exercism-with-logo-black-b427c06c6a068ba9f391734115e4d22dfa876d1d.svg">
+<h2 class='text-h3 mb-4'>Code practice and mentorship for everyone</h2>
+<p class='text-p-large'>
+Develop fluency in 67 programming languages
+with our unique blend of learning, practice and mentoring.
+Exercism is fun, effective and
+100% free, forever.
+</p>
+</div>
+<div class='rhs flex lg:ml-24 flex-col sm:flex-row items-stretch sm:items-center'>
+<a class="btn-l btn-primary mb-16 sm:mb-0 sm:mr-32" href="../users/sign_up.html">Sign up for free</a>
+<a class="btn-l btn-enhanced" href="../tracks.html">Explore languages</a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='lg-container'>
+<hr>
+<div class='site-links mt-24 md:mt-56'>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-40'>
+<div class='col'>
+<h3>Editions</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../index.htm">Exercism</a></li>
+<li><a href="/docs/using/editions/teams">Exercism for Teams</a></li>
+<li><a href="/docs/using/editions/research">Exercism Research</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>About</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../about.html">About Exercism</a></li>
+<li><a href="../about/team.html">Our team</a></li>
+<li><a href="../contributing/contributors.html">Contributors</a></li>
+<li><a href="/about/supporters/organisations">Supporting organisations</a></li>
+<li><a href="/about/supporters/individuals">Individual supporters</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Get involved</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../contributing.html">Contribute</a></li>
+<li><a href="../mentoring.html">Mentor</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Legal &amp; policies</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="/docs/using/legal/terms-of-service">Terms of usage</a></li>
+<li><a href="/docs/using/legal/privacy-policy">Privacy policy</a></li>
+<li><a href="/docs/using/legal/cookie-policy">Cookie policy</a></li>
+<li><a href="/docs/using/legal/code-of-conduct">Code of conduct</a></li>
+<li><a href="/docs/using/legal/accessibility">Accessibility statement</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Keep in touch</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../blog.html">Exercism&#39;s blog</a></li>
+<li><a href="https://github.com/exercism/exercism">Discuss on GitHub</a></li>
+<li><a href="/docs/using/contact">Contact us</a></li>
+<li><a href="/docs/using/report-abuse">Report abuse</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Get help</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="../docs.html">Exercism&#39;s Docs</a></li>
+<li><a href="/docs/using/getting-started">Getting started</a></li>
+<li><a href="/docs/using/faqs">FAQs</a></li>
+<li><a href="/docs/using/solving-exercises/working-locally">Installing the CLI</a></li>
+<li><a href="../cli-walkthrough.html">Interactive CLI Walkthrough</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='socials mt-24 mb-40 md:mb-56'>
+<a class="icon twitter" href="https://twitter.com/exercism_io"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+</a><a class="icon facebook" href="https://facebook.com/exercism.io"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-facebook-30d7c9862735514b98cc354bc12f460a4a40d26b.svg">
+</a><a class="icon github" href="https://github.com/exercism"><img role="presentation" alt="" class="c-icon" src="../assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+</a></div>
+<hr>
+<div class='tracks mt-32 md:mt-48 mb-32 md:mb-48 md:items-center'>
+<div class='hidden md:block'>
+<h2 class='text-h3'>Our programming language tracks</h2>
+<hr class='c-divider mt-28 mb-36'>
+</div>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-32'>
+<div class='col'>
+<ul>
+<li><a href="8th.html">8th</a></li>
+<li><a href="abap.html">ABAP</a></li>
+<li><a href="awk.html">AWK</a></li>
+<li><a href="ballerina.html">Ballerina</a></li>
+<li><a href="bash.html">Bash</a></li>
+<li><a href="c.html">C</a></li>
+<li><a href="csharp.html">C#</a></li>
+<li><a href="cpp.html">C++</a></li>
+<li><a href="cfml.html">CFML</a></li>
+<li><a href="clojure.html">Clojure</a></li>
+<li><a href="clojurescript.html">ClojureScript</a></li>
+<li><a href="cobol.html">COBOL</a></li>
+<li><a href="coffeescript.html">CoffeeScript</a></li>
+<li><a href="common-lisp.html">Common Lisp</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="crystal.html">Crystal</a></li>
+<li><a href="d.html">D</a></li>
+<li><a href="dart.html">Dart</a></li>
+<li><a href="delphi.html">Delphi Pascal</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="elm.html">Elm</a></li>
+<li><a href="emacs-lisp.html">Emacs Lisp</a></li>
+<li><a href="erlang.html">Erlang</a></li>
+<li><a href="fsharp.html">F#</a></li>
+<li><a href="fortran.html">Fortran</a></li>
+<li><a href="gleam.html">Gleam</a></li>
+<li><a href="go.html">Go</a></li>
+<li><a href="groovy.html">Groovy</a></li>
+<li><a href="haskell.html">Haskell</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="java.html">Java</a></li>
+<li><a href="javascript.html">JavaScript</a></li>
+<li><a href="jq.html">jq</a></li>
+<li><a href="julia.html">Julia</a></li>
+<li><a href="kotlin.html">Kotlin</a></li>
+<li><a href="lfe.html">LFE</a></li>
+<li><a href="lua.html">Lua</a></li>
+<li><a href="mips.html">MIPS Assembly</a></li>
+<li><a href="nim.html">Nim</a></li>
+<li><a href="objective-c.html">Objective-C</a></li>
+<li><a href="ocaml.html">OCaml</a></li>
+<li><a href="perl5.html">Perl</a></li>
+<li><a href="pharo-smalltalk.html">Pharo</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="php.html">PHP</a></li>
+<li><a href="plsql.html">PL/SQL</a></li>
+<li><a href="prolog.html">Prolog</a></li>
+<li><a href="purescript.html">PureScript</a></li>
+<li><a href="python.html">Python</a></li>
+<li><a href="r.html">R</a></li>
+<li><a href="racket.html">Racket</a></li>
+<li><a href="raku.html">Raku</a></li>
+<li><a href="reasonml.html">ReasonML</a></li>
+<li><a href="red.html">Red</a></li>
+<li><a href="ruby.html">Ruby</a></li>
+<li><a href="rust.html">Rust</a></li>
+<li><a href="scala.html">Scala</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="scheme.html">Scheme</a></li>
+<li><a href="sml.html">Standard ML</a></li>
+<li><a href="swift.html">Swift</a></li>
+<li><a href="tcl.html">Tcl</a></li>
+<li><a href="typescript.html">TypeScript</a></li>
+<li><a href="unison.html">Unison</a></li>
+<li><a href="vlang.html">V</a></li>
+<li><a href="vbnet.html">VB.NET</a></li>
+<li><a href="vimscript.html">Vim script</a></li>
+<li><a href="wasm.html">WebAssembly</a></li>
+<li><a href="wren.html">Wren</a></li>
+<li><a href="x86-64-assembly.html">x86-64 Assembly</a></li>
+<li><a href="zig.html">Zig</a></li>
+</ul>
+</div>
+<div class='col hidden md:block mt-32 xl:mt-0'>
+<h3 class='text-h6'>Want to add a language track to Exercism?</h3>
+<p class='text-p-base'>
+<a href="https://github.com/exercism/exercism/issues/new?title=Create%20new%20track%20for%20[LANGUAGE]">Open an issue</a>
+and let's discuss it.
+</p>
+</div>
+</div>
+</div>
+<hr>
+<div class='legals mt-24 md:mt-32 mb-32 md:mb-40 flex md:items-center flex-col md:flex-row'>
+<div class='company mb-16 md:mb-0 md:mr-32'>
+Exercism is not-for-profit organisation
+<a href="https://find-and-update.company-information.service.gov.uk/company/11733062">registered in the UK</a>.
+Its trustees are <a href="https://exercism.github.io/kytrinyx/">Katrina Owen</a>, <a href="https://ihid.info/">Jeremy Walker</a> and <a href="https://erikschierboom.com/">Erik Schierboom</a>.
+</div>
+<div class='copyright md:ml-auto'>
+© 2023 Exercism
+</div>
+</div>
+</div>
+</footer>
+<!-- Prefetch the deferred packs which are needed on other pages -->
+<link as='script' href='../assets/internal-debb09695d9f83daefa4efec219cfd4472a99174.js' rel='prefetch'>
+
+</body>
+</html>
+<!-- TODO: Add test for this! -->
