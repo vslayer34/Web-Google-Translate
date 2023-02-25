@@ -1,0 +1,409 @@
+।<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+<!-- Do this first - we want things loading ASAP. -->
+<link href='https://fonts.googleapis.com' rel='preconnect'>
+<link crossorigin='true' href='https://fonts.gstatic.com' rel='preconnect'>
+<link crossorigin='true' href='https://d24y9kuxp2d7l2.cloudfront.net' rel='preconnect'>
+<!-- We always want this rendered at the start. -->
+<link rel="stylesheet" href="assets/website-986ddebd9a7dab58d92347bbf4cd918dffac7b6f.css" data-turbo-track="reload">
+<link rel="stylesheet" href="css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&amp;display=swap">
+<script data-api='/usage/api/event' data-domain='exercism.org' defer="" src='usage/js/script.js'></script>
+<link rel="stylesheet" href="assets/internal-09019deeb529b28f6285d0e865647c9765452bbd.css" data-turbo-track="reload">
+<link rel="stylesheet" href="assets/application-69fb7b3abaf2e7663cc89f6a267aa2796b38294d.css" data-turbo-track="reload">
+<script src="assets/core-3f789adc5de44e6b577efdbf473e275a77791fb6.js" crossorigin="anonymous" type="module" data-turbo-track="reload" data-turbo-eval="false"></script>
+<script src="assets/application-72c1fd29327ab2a52cdaa3435b28a2ae66201373.js" crossorigin="anonymous" type="module" data-turbo-track="reload" data-turbo-eval="false"></script>
+
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="DDn2fYCEWENlDJwDDg9x33ND5badgkj489mxK88uUgUPKSIVsSThzFSs2NCxyDQ-X4jpPsrXhbvDSXCUjOwJFg">
+
+<meta name="action-cable-url" content="wss://exercism.org/cable">
+<meta content='no-cache' name='turbo-cache-control'>
+<meta content='language-servers-925786784.eu-west-2.elb.amazonaws.com' name='language-server-url'>
+<meta content='https://exercism.org/api/v2/bug_reports' name='bug-reports-url'>
+<meta content='https://exercism.org/api/v2/markdown/parse' name='parse-markdown-url'>
+<meta content='' name='user-id'>
+<meta content='pk_live_51IDGMXEoOT0Jqx0UGsyx7fUW7iojTCPobNQDDoVdVY64qsyeNyFDqQRAgXSdj2HF8mYzPGxsBWIEFPnenq0lEhLH00x7KfG52T' name='stripe-publishable-key'>
+<title>व्यायाम</title>
+<meta content='Learn, practice and get world-class mentoring in over 50 languages. 100% free.' name='description'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1, viewport-fit=cover' name='viewport'>
+<!-- Twitter Card data -->
+<meta content='summary_large_image' name='twitter:card'>
+<meta content='@exercism_io' name='twitter:site'>
+<meta content='@exercism_io' name='twitter:creator'>
+<meta content='https://exercism.org/contributing' name='twitter:url'>
+<meta content='Exercism' name='twitter:title'>
+<meta content='Learn, practice and get world-class mentoring in over 50 languages. 100% free.' name='twitter:description'>
+<meta content='https://dg8krxphbh767.cloudfront.net/meta/og.png' name='twitter:image'>
+<!-- Open Graph data -->
+<meta content='Exercism' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='https://exercism.org/contributing' property='og:url'>
+<meta content='https://dg8krxphbh767.cloudfront.net/meta/og.png' property='og:image'>
+<meta content='Learn, practice and get world-class mentoring in over 50 languages. 100% free.' property='og:description'>
+<meta content='Exercism' property='og:site_name'>
+<meta content='744760440' property='fb:admins'>
+<!-- Favicon -->
+<link href='meta/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='meta/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='meta/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='site.webmanifest' rel='manifest'>
+
+
+</head>
+<body class='namespace-contributing controller-dashboard action-show theme-light user-signed_out'>
+<header id="site-header"><a class="announcement-bar" href="donate.html"><div class="lg-container"><span>⚠️ Exercism needs donations to survive 2023. </span><strong>Please support us if you can!</strong><span>⚠️</span></div></a><div class="lg-container container"><a class="exercism-link xl:block" data-turbo-frame="tf-main" href="index.htm"><img alt="Exercism" class="c-icon" src="assets/icons/exercism-with-logo-black-b427c06c6a068ba9f391734115e4d22dfa876d1d.svg"></a><div class="docs-search"><div class="c-search-bar"><input class="--search" placeholder="Search Exercism&#39;s docs..."></div></div><nav class="signed-out"><ul><li><a data-turbo-frame="tf-main" class="relative" href="index.htm"><img role="presentation" alt="" class="c-icon" src="assets/icons/home-2a4e66176c4816cfbbf83ac43c0be8e1b91e5ed7.svg"><span>Home</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="tracks.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/tracks-2e780b460e113a9b07ce4446c988a31c40547b00.svg"><span>Language Tracks</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="community.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/community-97592cd275dfff37bf718b70931fc1572363f29f.svg"><span>Community</span><div class="ml-8 text-warning bg-lightOrange px-8 py-6 rounded-100 font-semibold text-[13px] flex items-center"><img role="presentation" alt="" class="c-icon !filter-warning !w-[12px] !h-[12px] !mr-4 !block" src="assets/icons/sparkle-0eb827302d20b3ed56848b2766f0fa70c7702389.svg"><span>New</span></div></a></li><li><a data-turbo-frame="tf-main" class="relative" href="mentoring.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/mentoring-4d1e266458e8e3293b94679b92ccea4aa2cdb58b.svg"><span>Mentor</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="donate.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/donate-f0162e3dfad842a240d30ef6d422c5f4a969d857.svg"><span>Donate 💜</span></a></li></ul></nav><div class="auth-buttons"><a class="btn-primary btn-xs" href="users/sign_up.html">Sign up</a><a class="btn-secondary btn-xs" href="users/sign_in.html">Log in</a></div><div class="c-react-component c-react-wrapper-dropdowns-dropdown" data-react-id="dropdowns-dropdown" data-react-data="{&quot;menu_button&quot;:{&quot;label&quot;:&quot;Button to open the navigation menu&quot;,&quot;className&quot;:&quot;explore-menu&quot;,&quot;extraClassNames&quot;:[&quot;btn-xs&quot;,&quot;btn-enhanced&quot;],&quot;html&quot;:&quot;\u003cimg role=\&quot;presentation\&quot; alt=\&quot;\&quot; class=\&quot;c-icon\&quot; src=\&quot;https://d24y9kuxp2d7l2.cloudfront.net/assets/icons/hamburger-7e74aa2e28fa2c1297400d23b3994a60439f7d83.svg\&quot; /\u003e\u003cspan\u003eExplore\u003c/span\u003e&quot;},&quot;menu_items&quot;:[{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/\&quot;\u003eHome\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/tracks\&quot;\u003eLanguage Tracks\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/community\&quot;\u003eCommunity\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/mentoring\&quot;\u003eMentoring\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/donate\&quot;\u003eDonate 💜\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link donate&quot;}]}" data-react-hydrate="false"></div></div></header>
+<turbo-frame data-turbo-action="advance" id="tf-main"><div id='contributing-dashboard'>
+<nav class="c-contributing-header c-header-with-bg"><div class="lg-container top-container"><div class="content"><img role="presentation" alt="" class="c-icon" src="assets/icons/contributing-header-50cfef1577c39259e834674f45f34f196785d3ea.svg"><h1>Let’s build the best free code learning platform, together</h1><p>Exercism is an <a href="about.html">open source, not-for-profit project</a> built by people from all backgrounds. With over one hundred dedicated maintainers and thousands of contributors, our goal is to create the best, free, code learning platform on the web.</p></div><img role="presentation" alt="" class="c-icon hidden md:block" src="assets/graphics/contributing-header-427afae89cc113b9f90c19abdc12fab7ed213880.svg"><div class="decorations hidden lg:block"></div></div><div class="lg-container nav-container"><div class="tabs"><a class="c-tab-2 selected" href="contributing.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/overview-9e9a39e9f2e81d2a28adf4254c588f9864d7e3a3.svg"><span>Getting Started</span></a><a class="c-tab-2 " href="contributing/tasks.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/tasks-6f48eaf5aed3c98474bbce1a3a9f41657873ccc9.svg"><span>Explore tasks</span><span class="count">462</span></a><a class="c-tab-2 " href="contributing/contributors-16.html?period=week"><img role="presentation" alt="" class="c-icon" src="assets/icons/contributors-8873894d89a89d8a22512b9253d17a57b91df2d7.svg"><span>Contributors</span><span class="count">13,032</span></a></div><a class="c-tab-2 guides" href="docs/building.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/guides-2729dd9f1b50d1801d8738dee00b87070c408aec.svg"><span>Contributing Help</span></a></div></nav>
+<div class='lg-container container'>
+<div class='methods-section'>
+<header class='header'>
+<h2>आप व्यायाम करने में हमारी मदद कैसे कर सकते हैं</h2>
+<hr class='c-divider'>
+</header>
+<div class='methods grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+<div class='method'>
+<img role="presentation" alt="" class="c-icon" src="assets/graphics/docs-344b7aeb9bb228c0a6e30fbecd42679d8d5e8640.svg">
+<h3>प्रूफरीड और अपडेट करें</h3>
+<div class='c-tag beginner'>शुरुआती</div>
+<p>ओपन सोर्स प्रोजेक्ट में कभी योगदान नहीं दिया? इसे आज़माएँ। हम आपका पहला पुल अनुरोध सबमिट करने में आपकी सहायता करेंगे।</p>
+<div class='issues'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/info-circle-0db7a70f51493909ba515887222c1c7cf27e02ad.svg">
+0 मुद्दों पर मदद की जरूरत है
+</div>
+<a class="c-prominent-link" href="contributing/tasks-1.html?actions%5B%5D=proofread"><span>0 मुद्दों का अन्वेषण करें</span><img role="presentation" alt="" class="c-icon" src="assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+
+</div>
+<div class='method'>
+<img role="presentation" alt="" class="c-icon" src="assets/graphics/improve-c982dd02e04700b5382dcd07bde798bff1e0d9af.svg">
+<h3>एक अवधारणा या व्यायाम में सुधार करें</h3>
+<div class='c-tag intermediary'>मध्यस्थ</div>
+<p>बग्स को ठीक करें और अवधारणाओं में सुधार करें और पूरे व्यायाम में व्यायाम करें। छात्रों को एक सहज और त्रुटि-मुक्त अनुभव प्रदान करने में सहायता करें।</p>
+<div class='issues'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/info-circle-0db7a70f51493909ba515887222c1c7cf27e02ad.svg">
+68 मुद्दों पर मदद की जरूरत है
+</div>
+<div class='track-icons'>
+<img alt="C++" class="c-track-icon  --cpp" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/cpp.svg">
+<img alt="ReasonML" class="c-track-icon  --reasonml" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/reasonml.svg">
+<img alt="Bash" class="c-track-icon  --bash" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/bash.svg">
+</div>
+<div class='tracks-list'>
+सी ++, रीज़नएमएल, बैश, एमएसीएस लिस्प
++ 43 और
+मदद की ज़रूरत है
+</div>
+<a class="c-prominent-link" href="contributing/tasks-2.html?actions%5B%5D=improve&amp;areas%5B%5D=concept-exercise&amp;areas%5B%5D=practice-exercise&amp;areas%5B%5D=concept"><span>68 मुद्दों का अन्वेषण करें</span><img role="presentation" alt="" class="c-icon" src="assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+
+</div>
+<div class='method'>
+<img role="presentation" alt="" class="c-icon" src="assets/graphics/exercises-08eeafbcf39d8b2710bcb6614f2da1e20f7fe443.svg">
+<h3>एक नया अभ्यास या अवधारणा बनाएँ</h3>
+<div class='c-tag advanced'>विकसित</div>
+<p>ट्रैक के रोडमैप के आधार पर एक नया अभ्यास या अवधारणा तैयार करें। सहभागी सामग्री बनाने का मज़ा लें जिसका उपयोग लाखों लोग करेंगे।</p>
+<div class='issues'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/info-circle-0db7a70f51493909ba515887222c1c7cf27e02ad.svg">
+39 मुद्दों पर मदद की जरूरत है
+</div>
+<div class='track-icons'>
+<img alt="Elixir" class="c-track-icon  --elixir" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/elixir.svg">
+<img alt="Fortran" class="c-track-icon  --fortran" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/fortran.svg">
+<img alt="Julia" class="c-track-icon  --julia" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/julia.svg">
+</div>
+<div class='tracks-list'>
+अमृत, फोरट्रान, जूलिया, एल्म
++ 3 और
+मदद की ज़रूरत है
+</div>
+<a class="c-prominent-link" href="contributing/tasks-3.html?actions%5B%5D=create&amp;areas%5B%5D=concept-exercise&amp;areas%5B%5D=practice-exercise&amp;areas%5B%5D=concept"><span>39 मुद्दों का अन्वेषण करें</span><img role="presentation" alt="" class="c-icon" src="assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+
+</div>
+<div class='method'>
+<img role="presentation" alt="" class="c-icon" src="assets/graphics/bugs-434a514aff282e3fe11fc7671012faedec8d144d.svg">
+<h3>एक परीक्षण धावक विकसित करें</h3>
+<div class='c-tag project'>परियोजना</div>
+<p>परीक्षण धावक हमारे ऑनलाइन संपादक को शक्ति प्रदान करते हैं। सभी ट्रैक में बुनियादी परीक्षण रनर होते हैं, लेकिन कई ट्रैक में अधिक उन्नत सुविधाओं और कार्यक्षमता को जोड़ने की आवश्यकता होती है।</p>
+<div class='issues'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/info-circle-0db7a70f51493909ba515887222c1c7cf27e02ad.svg">
+86 मुद्दों पर मदद की जरूरत है
+</div>
+<div class='track-icons'>
+<img alt="Groovy" class="c-track-icon  --groovy" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/groovy.svg">
+<img alt="Prolog" class="c-track-icon  --prolog" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/prolog.svg">
+<img alt="LFE" class="c-track-icon  --lfe" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/lfe.svg">
+</div>
+<div class='tracks-list'>
+ग्रोवी, प्रोलॉग, एलएफई, पीएचपी
++ 44 और
+मदद की ज़रूरत है
+</div>
+<a class="c-prominent-link" href="contributing/tasks-4.html?areas%5B%5D=test-runner"><span>86 मुद्दों का अन्वेषण करें</span><img role="presentation" alt="" class="c-icon" src="assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+
+</div>
+<div class='method'>
+<img role="presentation" alt="" class="c-icon" src="assets/graphics/automation-2daaaf2b197b0bd974e41e5154d5ec933b482924.svg">
+<h3>एक विश्लेषक विकसित करें</h3>
+<div class='c-tag project'>परियोजना</div>
+<p>विश्लेषक एएसटी विश्लेषण के माध्यम से छात्रों को स्वचालित प्रतिक्रिया देते हैं। ये विकसित करने के लिए सॉफ्टवेयर के जटिल और गहरे दिलचस्प टुकड़े हैं।</p>
+<div class='issues'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/info-circle-0db7a70f51493909ba515887222c1c7cf27e02ad.svg">
+44 मुद्दों पर मदद की जरूरत है
+</div>
+<div class='track-icons'>
+<img alt="Dart" class="c-track-icon  --dart" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/dart.svg">
+<img alt="Scala" class="c-track-icon  --scala" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/scala.svg">
+<img alt="C++" class="c-track-icon  --cpp" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/cpp.svg">
+</div>
+<div class='tracks-list'>
+डार्ट, स्काला, सी ++, स्कीम
++ 29 और
+मदद की ज़रूरत है
+</div>
+<a class="c-prominent-link" href="contributing/tasks-5.html?areas%5B%5D=analyzer"><span>44 मुद्दों का अन्वेषण करें</span><img role="presentation" alt="" class="c-icon" src="assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+
+</div>
+<div class='method'>
+<img role="presentation" alt="" class="c-icon" src="assets/graphics/representer-1008accc2af74388c09b0ab77ccf53e2fa12b092.svg">
+<h3>एक प्रतिनिधि विकसित करें</h3>
+<div class='c-tag project'>परियोजना</div>
+<p>प्रतिनिधि समान समाधानों को खोजने में हमारी सहायता करते हैं ताकि हम फ़ीडबैक का पुन: उपयोग कर सकें। एनालाइजर की तुलना में सरल लेकिन तर्क करने के लिए मजेदार और दिलचस्प।</p>
+<div class='issues'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/info-circle-0db7a70f51493909ba515887222c1c7cf27e02ad.svg">
+34 मुद्दों पर मदद की जरूरत है
+</div>
+<div class='track-icons'>
+<img alt="Gleam" class="c-track-icon  --gleam" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/gleam.svg">
+<img alt="Common Lisp" class="c-track-icon  --common-lisp" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/common-lisp.svg">
+<img alt="Vim script" class="c-track-icon  --vimscript" onerror="if (this.src != &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://d24y9kuxp2d7l2.cloudfront.net/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="tracks/vimscript.svg">
+</div>
+<div class='tracks-list'>
+ग्लैम, कॉमन लिस्प, विम स्क्रिप्ट, गो
++ 27 और
+मदद की ज़रूरत है
+</div>
+<a class="c-prominent-link" href="contributing/tasks-6.html?areas%5B%5D=representer"><span>34 मुद्दों का अन्वेषण करें</span><img role="presentation" alt="" class="c-icon" src="assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg"></a>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</turbo-frame>
+<div id='portal-container'></div>
+<div class='c-loading-overlay'></div>
+<footer id="site-footer"><div class='external-section pt-48 pb-0'>
+<div class='lg-container flex flex-col lg:flex-row'>
+<div class='lhs mr-auto mb-20 lg:mb-0'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/exercism-with-logo-black-b427c06c6a068ba9f391734115e4d22dfa876d1d.svg">
+<h2 class='text-h3 mb-4'>कोड अभ्यास और सभी के लिए सलाह</h2>
+<p class='text-p-large'>
+67 प्रोग्रामिंग भाषाओं में प्रवाह विकसित करें
+सीखने, अभ्यास और सलाह के हमारे अनूठे मिश्रण के साथ।
+व्यायाम मजेदार, प्रभावी और है
+100% मुफ़्त, हमेशा के लिए।
+</p>
+</div>
+<div class='rhs flex lg:ml-24 flex-col sm:flex-row items-stretch sm:items-center'>
+<a class="btn-l btn-primary mb-16 sm:mb-0 sm:mr-32" href="users/sign_up.html">मुफ्त में साइन अप</a>
+<a class="btn-l btn-enhanced" href="tracks.html">भाषाओं का अन्वेषण करें</a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='lg-container'>
+<hr>
+<div class='site-links mt-24 md:mt-56'>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-40'>
+<div class='col'>
+<h3>संस्करणों</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="index.htm">व्यायाम</a></li>
+<li><a href="/docs/using/editions/teams">टीमों के लिए व्यायाम</a></li>
+<li><a href="/docs/using/editions/research">व्यायाम अनुसंधान</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>के बारे में</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="about.html">व्यायाम के बारे में</a></li>
+<li><a href="about/team.html">हमारी टीम</a></li>
+<li><a href="contributing/contributors.html">योगदानकर्ताओं</a></li>
+<li><a href="/about/supporters/organisations">सहायक संस्थाएं</a></li>
+<li><a href="/about/supporters/individuals">व्यक्तिगत समर्थक</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>उलझना</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="contributing.html">योगदान देना</a></li>
+<li><a href="mentoring.html">उपदेशक</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>कानूनी और नीतियां</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="/docs/using/legal/terms-of-service">उपयोग की शर्तें</a></li>
+<li><a href="/docs/using/legal/privacy-policy">गोपनीयता नीति</a></li>
+<li><a href="/docs/using/legal/cookie-policy">कूकी नीति</a></li>
+<li><a href="/docs/using/legal/code-of-conduct">आचार संहिता</a></li>
+<li><a href="/docs/using/legal/accessibility">अभिगम्यता कथन</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>संपर्क में रहना</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="blog.html">व्यायाम का ब्लॉग</a></li>
+<li><a href="https://github.com/exercism/exercism">गिटहब पर चर्चा करें</a></li>
+<li><a href="/docs/using/contact">संपर्क करें</a></li>
+<li><a href="/docs/using/report-abuse">दुरुपयोग होने की सूचना दें</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>मदद लें</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="docs.html">व्यायाम के डॉक्स</a></li>
+<li><a href="/docs/using/getting-started">शुरू करना</a></li>
+<li><a href="/docs/using/faqs">पूछे जाने वाले प्रश्न</a></li>
+<li><a href="/docs/using/solving-exercises/working-locally">सीएलआई स्थापित करना</a></li>
+<li><a href="cli-walkthrough.html">इंटरएक्टिव सीएलआई वॉकथ्रू</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='socials mt-24 mb-40 md:mb-56'>
+<a class="icon twitter" href="https://twitter.com/exercism_io"><img role="presentation" alt="" class="c-icon" src="assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+</a><a class="icon facebook" href="https://facebook.com/exercism.io"><img role="presentation" alt="" class="c-icon" src="assets/icons/external-site-facebook-30d7c9862735514b98cc354bc12f460a4a40d26b.svg">
+</a><a class="icon github" href="https://github.com/exercism"><img role="presentation" alt="" class="c-icon" src="assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+</a></div>
+<hr>
+<div class='tracks mt-32 md:mt-48 mb-32 md:mb-48 md:items-center'>
+<div class='hidden md:block'>
+<h2 class='text-h3'>हमारी प्रोग्रामिंग भाषा ट्रैक करती है</h2>
+<hr class='c-divider mt-28 mb-36'>
+</div>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-32'>
+<div class='col'>
+<ul>
+<li><a href="tracks/8.html">8</a></li>
+<li><a href="tracks/abap.html">एबीएपी</a></li>
+<li><a href="tracks/awk.html">एडब्ल्यूके</a></li>
+<li><a href="tracks/ballerina.html">बैले नृत्यकत्री</a></li>
+<li><a href="tracks/bash.html">दे घुमा के</a></li>
+<li><a href="tracks/c.html">सी</a></li>
+<li><a href="tracks/csharp.html">सी#</a></li>
+<li><a href="tracks/cpp.html">सी ++</a></li>
+<li><a href="tracks/cfml.html">सीएफएमएल</a></li>
+<li><a href="tracks/clojure.html">क्लोजर</a></li>
+<li><a href="tracks/clojurescript.html">क्लोजरस्क्रिप्ट</a></li>
+<li><a href="tracks/cobol.html">कोबोल</a></li>
+<li><a href="tracks/coffeescript.html">कॉफीस्क्रिप्ट</a></li>
+<li><a href="tracks/common-lisp.html">सामान्य लिस्प</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="tracks/crystal.html">क्रिस्टल</a></li>
+<li><a href="tracks/d.html">डी</a></li>
+<li><a href="tracks/dart.html">तीव्र गति</a></li>
+<li><a href="tracks/delphi.html">डेल्फी पास्कल</a></li>
+<li><a href="tracks/elixir.html">अमृत</a></li>
+<li><a href="tracks/elm.html">एल्म</a></li>
+<li><a href="tracks/emacs-lisp.html">Emacs लिस्प</a></li>
+<li><a href="tracks/erlang.html">Erlang</a></li>
+<li><a href="tracks/fsharp.html">एफ#</a></li>
+<li><a href="tracks/fortran.html">फोरट्रान</a></li>
+<li><a href="tracks/gleam.html">प्रकाश की किरण</a></li>
+<li><a href="tracks/go.html">जाना</a></li>
+<li><a href="tracks/groovy.html">ग्रूवी</a></li>
+<li><a href="tracks/haskell.html">हास्केल</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="tracks/java.html">जावा</a></li>
+<li><a href="tracks/javascript.html">जावास्क्रिप्ट</a></li>
+<li><a href="tracks/जेक्यू.html">जेक्यू</a></li>
+<li><a href="tracks/julia.html">जूलिया</a></li>
+<li><a href="tracks/kotlin.html">Kotlin</a></li>
+<li><a href="tracks/lfe.html">एलएफई</a></li>
+<li><a href="tracks/lua.html">लुआ</a></li>
+<li><a href="tracks/mips.html">एमआईपीएस असेंबली</a></li>
+<li><a href="tracks/nim.html">एनआईएम</a></li>
+<li><a href="tracks/objective-c.html">उद्देश्य सी</a></li>
+<li><a href="tracks/ocaml.html">OCaml</a></li>
+<li><a href="tracks/perl5.html">पर्ल</a></li>
+<li><a href="tracks/pharo-smalltalk.html">फिरो</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="tracks/php.html">पीएचपी</a></li>
+<li><a href="tracks/plsql.html">पीएल/एसक्यूएल</a></li>
+<li><a href="tracks/prolog.html">प्रोलॉग</a></li>
+<li><a href="tracks/purescript.html">प्योरस्क्रिप्ट</a></li>
+<li><a href="tracks/python.html">अजगर</a></li>
+<li><a href="tracks/r.html">आर</a></li>
+<li><a href="tracks/racket.html">रैकेट</a></li>
+<li><a href="tracks/raku.html">राकू</a></li>
+<li><a href="tracks/reasonml.html">कारण एमएल</a></li>
+<li><a href="tracks/red.html">लाल</a></li>
+<li><a href="tracks/ruby.html">माणिक</a></li>
+<li><a href="tracks/rust.html">जंग</a></li>
+<li><a href="tracks/scala.html">स्काला</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="tracks/scheme.html">योजना</a></li>
+<li><a href="tracks/sml.html">मानक एमएल</a></li>
+<li><a href="tracks/swift.html">तीव्र</a></li>
+<li><a href="tracks/tcl.html">टीसीएल</a></li>
+<li><a href="tracks/typescript.html">टाइपप्रति</a></li>
+<li><a href="tracks/unison.html">सामंजस्य</a></li>
+<li><a href="tracks/vlang.html">वी</a></li>
+<li><a href="tracks/vbnet.html">वीबी.नेट</a></li>
+<li><a href="tracks/vimscript.html">विम स्क्रिप्ट</a></li>
+<li><a href="tracks/wasm.html">Webविधानसभा</a></li>
+<li><a href="tracks/wren.html">रेन</a></li>
+<li><a href="tracks/x86-64-assembly.html">x86-64 असेंबली</a></li>
+<li><a href="tracks/zig.html">ज़िग</a></li>
+</ul>
+</div>
+<div class='col hidden md:block mt-32 xl:mt-0'>
+<h3 class='text-h6'>व्यायाम में भाषा ट्रैक जोड़ना चाहते हैं?</h3>
+<p class='text-p-base'>
+<a href="https://github.com/exercism/exercism/issues/new?title=Create%20new%20track%20for%20[LANGUAGE]">कोई मुद्दा खोलें</a>
+और आइए इसकी चर्चा करें।
+</p>
+</div>
+</div>
+</div>
+<hr>
+<div class='legals mt-24 md:mt-32 mb-32 md:mb-40 flex md:items-center flex-col md:flex-row'>
+<div class='company mb-16 md:mb-0 md:mr-32'>
+व्यायाम गैर-लाभकारी संगठन है
+<a href="https://find-and-update.company-information.service.gov.uk/company/11733062">registered in the UK</a>.
+Its trustees are <a href="https://exercism.github.io/kytrinyx/">Katrina Owen</a>, <a href="https://ihid.info/">Jeremy Walker</a> and <a href="https://erikschierboom.com/">Erik Schierboom</a>.
+</div>
+<div class='copyright md:ml-auto'>
+© 2023 व्यायाम
+</div>
+</div>
+</div>
+</footer>
+<!-- Prefetch the deferred packs which are needed on other pages -->
+<link as='script' href='assets/internal-debb09695d9f83daefa4efec219cfd4472a99174.js' rel='prefetch'>
+
+</body>
+</html>
+<!-- TODO: Add test for this! -->

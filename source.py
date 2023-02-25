@@ -17,15 +17,17 @@ script_path = os.getcwd()
 
 to_translat = {}
 
+
+###
+# add the paragraph and the the translated paragraph to the dictionary
+###
 def add_to_dict(sentence: str, translated_sentence: str):
     to_translat[sentence] = translated_sentence
-    # to_translat.update({sentence: translate_sentence})
-    # print(to_translat)
 
 
 
 ###
-# Check sentence to get the paragraphs
+# Check sentence to get the paragraphs ignoring the tags
 ###
 def check_sentence(sentence: str):    
 
@@ -38,67 +40,63 @@ def check_sentence(sentence: str):
 # open the file and returns its content as a string
 ###
 def open_file(file_name: str):
+    # get the targeted folder path
     folder_path = script_path + r"\Targeted_Website" + f"\{file_name}"
+    # open the file
+    # use of codecs to make python read and parse html files
     file_handle = codecs.open(folder_path, 'r', "utf-8")
     
+    # go through each line
     for line in file_handle.readlines():
-        # x = input()
-        print(line)
+
         new_line = check_sentence(line)
-        # print("XXXXXXXXXX")
-        # print(new_line)
+
         if new_line.strip() != "":
+            # translate the extracted paragraph
             translated_line = translate_sentence(new_line)
+            # add it to a dict containing every paragraph and its translated equaflent
             add_to_dict(new_line, translated_line)
             
+        # write a new file
         write_file(line, file_name, new_line)
 
     file_handle.close()
 
-    # return file_content
 
-
+###
+# take the sentence that should be translated
+###
 def translate_sentence(text: str):
     print(text)
     translator = Translator()
-    result = translator.translate(text, dest="de", src="en")
+    result = translator.translate(text, dest="hi", src="en")
     return result.text
 
 
 
+###
+# Write the new file
+# and apply the translation to it
+###
 def write_file(text: str, file_name: str, text_to_be_replaced):
+    # path to the newly created file
     folder_path = script_path + r"\Translated_Website" + f"\{file_name}"
     file_handle = codecs.open(folder_path, "a+", "utf-8")
+    # replace the original text with the translated one
     translated_text = apply_translation(text, text_to_be_replaced)
-    # if translated_text == None:
-    #     translated_text = text
     file_handle.write(translated_text)
     file_handle.close()
 
 
-    
+###
+# search the dictionary
+# and replace the paragraphs with the translated text
+###
 def apply_translation(text: str, text_to_be_replaced):
     for key in to_translat.keys():
-        # if key.strip() in text.strip():
-        #     print("----------------------")
-        #     print(key)
-        #     print(to_translat[key])
-        #     print(text)
-        #     new_text = text.replace(key.strip(), to_translat[key])
-        #     print("replaced")
-        #     print(new_text)
-        #     print("----------------------")
-        #     return new_text
-        
+        # compare the texts and replace it
         if key.strip() == text_to_be_replaced.strip():
-            print("----------------------")
-            print(key)
-            print(to_translat[key])
-            print(text)
             new_text = text.replace(text_to_be_replaced.strip(), to_translat[key])
-            print("replaced")
-            print(new_text)
-            print("----------------------")
             return new_text
     return text
 
@@ -106,14 +104,7 @@ def apply_translation(text: str, text_to_be_replaced):
 ##################################################################################################
 # running sequence
 def main():
-    file_content = open_file("about.html")
-
-    # print(file_content)
-
-    # new_translated_content = translate_sentence(file_content)
-
-    # write_file(file_content, "translated.html")
-
+    open_file("index.htm")
 
 
 ##################################################################################################

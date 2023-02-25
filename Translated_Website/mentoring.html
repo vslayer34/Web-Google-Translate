@@ -1,0 +1,319 @@
+।<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+<!-- Do this first - we want things loading ASAP. -->
+<link href='https://fonts.googleapis.com' rel='preconnect'>
+<link crossorigin='true' href='https://fonts.gstatic.com' rel='preconnect'>
+<link crossorigin='true' href='https://d24y9kuxp2d7l2.cloudfront.net' rel='preconnect'>
+<!-- We always want this rendered at the start. -->
+<link rel="stylesheet" href="assets/website-986ddebd9a7dab58d92347bbf4cd918dffac7b6f.css" data-turbo-track="reload">
+<link rel="stylesheet" href="css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&amp;display=swap">
+<script data-api='/usage/api/event' data-domain='exercism.org' defer="" src='usage/js/script.js'></script>
+<link rel="stylesheet" href="assets/internal-09019deeb529b28f6285d0e865647c9765452bbd.css" data-turbo-track="reload">
+<link rel="stylesheet" href="assets/application-69fb7b3abaf2e7663cc89f6a267aa2796b38294d.css" data-turbo-track="reload">
+<script src="assets/core-3f789adc5de44e6b577efdbf473e275a77791fb6.js" crossorigin="anonymous" type="module" data-turbo-track="reload" data-turbo-eval="false"></script>
+<script src="assets/application-72c1fd29327ab2a52cdaa3435b28a2ae66201373.js" crossorigin="anonymous" type="module" data-turbo-track="reload" data-turbo-eval="false"></script>
+
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="WvWeIIxIr6nTPsoAf2B3QIIQoMUFdrEzG7wJSMeY9gtZ5UpIvegWJuKejtPApzKhrtusTVIjfHArLMj3hFqtGA">
+
+<meta name="action-cable-url" content="wss://exercism.org/cable">
+<meta content='no-cache' name='turbo-cache-control'>
+<meta content='language-servers-925786784.eu-west-2.elb.amazonaws.com' name='language-server-url'>
+<meta content='https://exercism.org/api/v2/bug_reports' name='bug-reports-url'>
+<meta content='https://exercism.org/api/v2/markdown/parse' name='parse-markdown-url'>
+<meta content='' name='user-id'>
+<meta content='pk_live_51IDGMXEoOT0Jqx0UGsyx7fUW7iojTCPobNQDDoVdVY64qsyeNyFDqQRAgXSdj2HF8mYzPGxsBWIEFPnenq0lEhLH00x7KfG52T' name='stripe-publishable-key'>
+<title>व्यायाम</title>
+<meta content='Learn, practice and get world-class mentoring in over 50 languages. 100% free.' name='description'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1, viewport-fit=cover' name='viewport'>
+<!-- Twitter Card data -->
+<meta content='summary_large_image' name='twitter:card'>
+<meta content='@exercism_io' name='twitter:site'>
+<meta content='@exercism_io' name='twitter:creator'>
+<meta content='https://exercism.org/mentoring' name='twitter:url'>
+<meta content='Exercism' name='twitter:title'>
+<meta content='Learn, practice and get world-class mentoring in over 50 languages. 100% free.' name='twitter:description'>
+<meta content='https://dg8krxphbh767.cloudfront.net/meta/og.png' name='twitter:image'>
+<!-- Open Graph data -->
+<meta content='Exercism' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='https://exercism.org/mentoring' property='og:url'>
+<meta content='https://dg8krxphbh767.cloudfront.net/meta/og.png' property='og:image'>
+<meta content='Learn, practice and get world-class mentoring in over 50 languages. 100% free.' property='og:description'>
+<meta content='Exercism' property='og:site_name'>
+<meta content='744760440' property='fb:admins'>
+<!-- Favicon -->
+<link href='meta/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='meta/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='meta/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='site.webmanifest' rel='manifest'>
+
+
+</head>
+<body class='namespace-mentoring controller-external action-show theme-light user-signed_out'>
+<header id="site-header"><a class="announcement-bar" href="donate.html"><div class="lg-container"><span>⚠️ Exercism needs donations to survive 2023. </span><strong>Please support us if you can!</strong><span>⚠️</span></div></a><div class="lg-container container"><a class="exercism-link xl:block" data-turbo-frame="tf-main" href="index.htm"><img alt="Exercism" class="c-icon" src="assets/icons/exercism-with-logo-black-b427c06c6a068ba9f391734115e4d22dfa876d1d.svg"></a><div class="docs-search"><div class="c-search-bar"><input class="--search" placeholder="Search Exercism&#39;s docs..."></div></div><nav class="signed-out"><ul><li><a data-turbo-frame="tf-main" class="relative" href="index.htm"><img role="presentation" alt="" class="c-icon" src="assets/icons/home-2a4e66176c4816cfbbf83ac43c0be8e1b91e5ed7.svg"><span>Home</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="tracks.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/tracks-2e780b460e113a9b07ce4446c988a31c40547b00.svg"><span>Language Tracks</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="community.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/community-97592cd275dfff37bf718b70931fc1572363f29f.svg"><span>Community</span><div class="ml-8 text-warning bg-lightOrange px-8 py-6 rounded-100 font-semibold text-[13px] flex items-center"><img role="presentation" alt="" class="c-icon !filter-warning !w-[12px] !h-[12px] !mr-4 !block" src="assets/icons/sparkle-0eb827302d20b3ed56848b2766f0fa70c7702389.svg"><span>New</span></div></a></li><li><a data-turbo-frame="tf-main" class="relative" href="mentoring.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/mentoring-4d1e266458e8e3293b94679b92ccea4aa2cdb58b.svg"><span>Mentor</span></a></li><li><a data-turbo-frame="tf-main" class="relative" href="donate.html"><img role="presentation" alt="" class="c-icon" src="assets/icons/donate-f0162e3dfad842a240d30ef6d422c5f4a969d857.svg"><span>Donate 💜</span></a></li></ul></nav><div class="auth-buttons"><a class="btn-primary btn-xs" href="users/sign_up.html">Sign up</a><a class="btn-secondary btn-xs" href="users/sign_in.html">Log in</a></div><div class="c-react-component c-react-wrapper-dropdowns-dropdown" data-react-id="dropdowns-dropdown" data-react-data="{&quot;menu_button&quot;:{&quot;label&quot;:&quot;Button to open the navigation menu&quot;,&quot;className&quot;:&quot;explore-menu&quot;,&quot;extraClassNames&quot;:[&quot;btn-xs&quot;,&quot;btn-enhanced&quot;],&quot;html&quot;:&quot;\u003cimg role=\&quot;presentation\&quot; alt=\&quot;\&quot; class=\&quot;c-icon\&quot; src=\&quot;https://d24y9kuxp2d7l2.cloudfront.net/assets/icons/hamburger-7e74aa2e28fa2c1297400d23b3994a60439f7d83.svg\&quot; /\u003e\u003cspan\u003eExplore\u003c/span\u003e&quot;},&quot;menu_items&quot;:[{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/\&quot;\u003eHome\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/tracks\&quot;\u003eLanguage Tracks\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/community\&quot;\u003eCommunity\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/mentoring\&quot;\u003eMentoring\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/donate\&quot;\u003eDonate 💜\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link donate&quot;}]}" data-react-hydrate="false"></div></div></header>
+<turbo-frame data-turbo-action="advance" id="tf-main"><div id='mentor-external-page'>
+<section class='top-section'>
+<div class='lg-container c-shapes'>
+<img role="presentation" alt="" class="c-icon" src="assets/graphics/mentoring-20449daf6b95a22d0abd6aae371a8eb9d79991d5.svg">
+<h1>अपना ज्ञान दूसरों के साथ साझा करें</h1>
+<p>
+मेंटरिंग आपके स्वयं के सीखने को सुदृढ़ करने का एक मजेदार और पुरस्कृत तरीका है, जबकि दूसरों को उन चीजों को सीखने और खोजने में मदद करता है जिन्हें वे नहीं जानते हैं।
+<a href="/docs/using/product/reputation">सलाह देने से प्रतिष्ठा भी मिलती है।</a>
+</p>
+<p class='unsure'>
+सुनिश्चित नहीं हैं कि क्या आप प्रभावी ढंग से सलाह दे सकते हैं?
+हमारे कुछ बेहतरीन गुरु भी चिंतित हैं।
+</p>
+<div class='flex items-center'>
+<a class="btn-m btn-primary" href="users/sign_up.html">सलाह देने का प्रयास करने के लिए साइन अप करें</a>
+<a class="btn-m btn-secondary ml-24" href="users/sign_in.html">लॉग इन करें</a>
+</div>
+</div>
+</section>
+<article class='lg-container'>
+<section class='video-section'>
+<div class="video rounded-5 overflow-hidden" style="padding:57% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/595885591?badge=0&autopause=0&player_id=0&app_id=58479&h=3d84913229" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Become an Exercism mentor"></iframe></div><script src="api/player.js"></script>
+</section>
+<section class='reasons-section'>
+<h2>गुरु क्यों बनें?</h2>
+<div class='reasons grid-cols-1 md:grid-cols-3'>
+<div class='reason'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/mentoring-challenge-8a86c4d50d33efde1c4b092ecf6ed9a9cf561173.svg">
+<h3>अपने ज्ञान को चुनौती दें</h3>
+<p>शिक्षण अपने स्वयं के ज्ञान को मजबूत करने, अपनी कमजोरियों की खोज करने और उन नवीन विचारों को देखने के सर्वोत्तम तरीकों में से एक है जिनके बारे में आपने कभी सपने में भी नहीं सोचा होगा।</p>
+</div>
+<div class='reason'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/mentoring-opportunity-32a8ea9b4c7e9af23ff214052f482122d55e3609.svg">
+<h3>दूसरों के लिए अवसर प्रदान करें</h3>
+<p>मेंटर्स का छात्रों के सीखने पर जबरदस्त प्रभाव हो सकता है, उनके कौशल में तेजी से वृद्धि हो सकती है। दूसरे के जीवन में बदलाव के उत्प्रेरक बनें।</p>
+</div>
+<div class='reason'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/mentoring-soft-skills-161f5ae20151f882145e8ffe5f36076797d47282.svg">
+<h3>अपने "सॉफ्ट स्किल्स" का विकास करें</h3>
+<p>किसी भी क्षेत्र या पेशे में प्रगति के लिए संचार जैसे सॉफ्ट कौशल और प्रतिक्रिया लेने में सक्षम होना सर्वोपरि है।</p>
+</div>
+</div>
+</section>
+</article>
+</div>
+
+</turbo-frame>
+<div id='portal-container'></div>
+<div class='c-loading-overlay'></div>
+<footer id="site-footer"><div class='external-section pt-48 pb-0'>
+<div class='lg-container flex flex-col lg:flex-row'>
+<div class='lhs mr-auto mb-20 lg:mb-0'>
+<img role="presentation" alt="" class="c-icon" src="assets/icons/exercism-with-logo-black-b427c06c6a068ba9f391734115e4d22dfa876d1d.svg">
+<h2 class='text-h3 mb-4'>कोड अभ्यास और सभी के लिए सलाह</h2>
+<p class='text-p-large'>
+67 प्रोग्रामिंग भाषाओं में प्रवाह विकसित करें
+सीखने, अभ्यास और सलाह के हमारे अनूठे मिश्रण के साथ।
+व्यायाम मजेदार, प्रभावी और है
+100% मुफ़्त, हमेशा के लिए।
+</p>
+</div>
+<div class='rhs flex lg:ml-24 flex-col sm:flex-row items-stretch sm:items-center'>
+<a class="btn-l btn-primary mb-16 sm:mb-0 sm:mr-32" href="users/sign_up.html">मुफ्त में साइन अप</a>
+<a class="btn-l btn-enhanced" href="tracks.html">भाषाओं का अन्वेषण करें</a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='lg-container'>
+<hr>
+<div class='site-links mt-24 md:mt-56'>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-40'>
+<div class='col'>
+<h3>संस्करणों</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="index.htm">व्यायाम</a></li>
+<li><a href="/docs/using/editions/teams">टीमों के लिए व्यायाम</a></li>
+<li><a href="/docs/using/editions/research">व्यायाम अनुसंधान</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>के बारे में</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="about.html">व्यायाम के बारे में</a></li>
+<li><a href="about/team.html">हमारी टीम</a></li>
+<li><a href="contributing/contributors.html">योगदानकर्ताओं</a></li>
+<li><a href="/about/supporters/organisations">सहायक संस्थाएं</a></li>
+<li><a href="/about/supporters/individuals">व्यक्तिगत समर्थक</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>उलझना</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="contributing.html">योगदान देना</a></li>
+<li><a href="mentoring.html">उपदेशक</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>कानूनी और नीतियां</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="/docs/using/legal/terms-of-service">उपयोग की शर्तें</a></li>
+<li><a href="/docs/using/legal/privacy-policy">गोपनीयता नीति</a></li>
+<li><a href="/docs/using/legal/cookie-policy">कूकी नीति</a></li>
+<li><a href="/docs/using/legal/code-of-conduct">आचार संहिता</a></li>
+<li><a href="/docs/using/legal/accessibility">अभिगम्यता कथन</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>संपर्क में रहना</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="blog.html">व्यायाम का ब्लॉग</a></li>
+<li><a href="https://github.com/exercism/exercism">गिटहब पर चर्चा करें</a></li>
+<li><a href="/docs/using/contact">संपर्क करें</a></li>
+<li><a href="/docs/using/report-abuse">दुरुपयोग होने की सूचना दें</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>मदद लें</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="docs.html">व्यायाम के डॉक्स</a></li>
+<li><a href="/docs/using/getting-started">शुरू करना</a></li>
+<li><a href="/docs/using/faqs">पूछे जाने वाले प्रश्न</a></li>
+<li><a href="/docs/using/solving-exercises/working-locally">सीएलआई स्थापित करना</a></li>
+<li><a href="cli-walkthrough.html">इंटरएक्टिव सीएलआई वॉकथ्रू</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='socials mt-24 mb-40 md:mb-56'>
+<a class="icon twitter" href="https://twitter.com/exercism_io"><img role="presentation" alt="" class="c-icon" src="assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg">
+</a><a class="icon facebook" href="https://facebook.com/exercism.io"><img role="presentation" alt="" class="c-icon" src="assets/icons/external-site-facebook-30d7c9862735514b98cc354bc12f460a4a40d26b.svg">
+</a><a class="icon github" href="https://github.com/exercism"><img role="presentation" alt="" class="c-icon" src="assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg">
+</a></div>
+<hr>
+<div class='tracks mt-32 md:mt-48 mb-32 md:mb-48 md:items-center'>
+<div class='hidden md:block'>
+<h2 class='text-h3'>हमारी प्रोग्रामिंग भाषा ट्रैक करती है</h2>
+<hr class='c-divider mt-28 mb-36'>
+</div>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-32'>
+<div class='col'>
+<ul>
+<li><a href="tracks/8.html">8</a></li>
+<li><a href="tracks/abap.html">एबीएपी</a></li>
+<li><a href="tracks/awk.html">एडब्ल्यूके</a></li>
+<li><a href="tracks/ballerina.html">बैले नृत्यकत्री</a></li>
+<li><a href="tracks/bash.html">दे घुमा के</a></li>
+<li><a href="tracks/c.html">सी</a></li>
+<li><a href="tracks/csharp.html">सी#</a></li>
+<li><a href="tracks/cpp.html">सी ++</a></li>
+<li><a href="tracks/cfml.html">सीएफएमएल</a></li>
+<li><a href="tracks/clojure.html">क्लोजर</a></li>
+<li><a href="tracks/clojurescript.html">क्लोजरस्क्रिप्ट</a></li>
+<li><a href="tracks/cobol.html">कोबोल</a></li>
+<li><a href="tracks/coffeescript.html">कॉफीस्क्रिप्ट</a></li>
+<li><a href="tracks/common-lisp.html">सामान्य लिस्प</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="tracks/crystal.html">क्रिस्टल</a></li>
+<li><a href="tracks/d.html">डी</a></li>
+<li><a href="tracks/dart.html">तीव्र गति</a></li>
+<li><a href="tracks/delphi.html">डेल्फी पास्कल</a></li>
+<li><a href="tracks/elixir.html">अमृत</a></li>
+<li><a href="tracks/elm.html">एल्म</a></li>
+<li><a href="tracks/emacs-lisp.html">Emacs लिस्प</a></li>
+<li><a href="tracks/erlang.html">Erlang</a></li>
+<li><a href="tracks/fsharp.html">एफ#</a></li>
+<li><a href="tracks/fortran.html">फोरट्रान</a></li>
+<li><a href="tracks/gleam.html">प्रकाश की किरण</a></li>
+<li><a href="tracks/go.html">जाना</a></li>
+<li><a href="tracks/groovy.html">ग्रूवी</a></li>
+<li><a href="tracks/haskell.html">हास्केल</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="tracks/java.html">जावा</a></li>
+<li><a href="tracks/javascript.html">जावास्क्रिप्ट</a></li>
+<li><a href="tracks/जेक्यू.html">जेक्यू</a></li>
+<li><a href="tracks/julia.html">जूलिया</a></li>
+<li><a href="tracks/kotlin.html">Kotlin</a></li>
+<li><a href="tracks/lfe.html">एलएफई</a></li>
+<li><a href="tracks/lua.html">लुआ</a></li>
+<li><a href="tracks/mips.html">एमआईपीएस असेंबली</a></li>
+<li><a href="tracks/nim.html">एनआईएम</a></li>
+<li><a href="tracks/objective-c.html">उद्देश्य सी</a></li>
+<li><a href="tracks/ocaml.html">OCaml</a></li>
+<li><a href="tracks/perl5.html">पर्ल</a></li>
+<li><a href="tracks/pharo-smalltalk.html">फिरो</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="tracks/php.html">पीएचपी</a></li>
+<li><a href="tracks/plsql.html">पीएल/एसक्यूएल</a></li>
+<li><a href="tracks/prolog.html">प्रोलॉग</a></li>
+<li><a href="tracks/purescript.html">प्योरस्क्रिप्ट</a></li>
+<li><a href="tracks/python.html">अजगर</a></li>
+<li><a href="tracks/r.html">आर</a></li>
+<li><a href="tracks/racket.html">रैकेट</a></li>
+<li><a href="tracks/raku.html">राकू</a></li>
+<li><a href="tracks/reasonml.html">कारण एमएल</a></li>
+<li><a href="tracks/red.html">लाल</a></li>
+<li><a href="tracks/ruby.html">माणिक</a></li>
+<li><a href="tracks/rust.html">जंग</a></li>
+<li><a href="tracks/scala.html">स्काला</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="tracks/scheme.html">योजना</a></li>
+<li><a href="tracks/sml.html">मानक एमएल</a></li>
+<li><a href="tracks/swift.html">तीव्र</a></li>
+<li><a href="tracks/tcl.html">टीसीएल</a></li>
+<li><a href="tracks/typescript.html">टाइपप्रति</a></li>
+<li><a href="tracks/unison.html">सामंजस्य</a></li>
+<li><a href="tracks/vlang.html">वी</a></li>
+<li><a href="tracks/vbnet.html">वीबी.नेट</a></li>
+<li><a href="tracks/vimscript.html">विम स्क्रिप्ट</a></li>
+<li><a href="tracks/wasm.html">Webविधानसभा</a></li>
+<li><a href="tracks/wren.html">रेन</a></li>
+<li><a href="tracks/x86-64-assembly.html">x86-64 असेंबली</a></li>
+<li><a href="tracks/zig.html">ज़िग</a></li>
+</ul>
+</div>
+<div class='col hidden md:block mt-32 xl:mt-0'>
+<h3 class='text-h6'>व्यायाम में भाषा ट्रैक जोड़ना चाहते हैं?</h3>
+<p class='text-p-base'>
+<a href="https://github.com/exercism/exercism/issues/new?title=Create%20new%20track%20for%20[LANGUAGE]">कोई मुद्दा खोलें</a>
+और आइए इसकी चर्चा करें।
+</p>
+</div>
+</div>
+</div>
+<hr>
+<div class='legals mt-24 md:mt-32 mb-32 md:mb-40 flex md:items-center flex-col md:flex-row'>
+<div class='company mb-16 md:mb-0 md:mr-32'>
+व्यायाम गैर-लाभकारी संगठन है
+<a href="https://find-and-update.company-information.service.gov.uk/company/11733062">registered in the UK</a>.
+Its trustees are <a href="https://exercism.github.io/kytrinyx/">Katrina Owen</a>, <a href="https://ihid.info/">Jeremy Walker</a> and <a href="https://erikschierboom.com/">Erik Schierboom</a>.
+</div>
+<div class='copyright md:ml-auto'>
+© 2023 व्यायाम
+</div>
+</div>
+</div>
+</footer>
+<!-- Prefetch the deferred packs which are needed on other pages -->
+<link as='script' href='assets/internal-debb09695d9f83daefa4efec219cfd4472a99174.js' rel='prefetch'>
+
+</body>
+</html>
+<!-- TODO: Add test for this! -->
